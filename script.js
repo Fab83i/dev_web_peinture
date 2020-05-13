@@ -73,9 +73,7 @@ $(document).ready(function () {
         
         $('#overlay').show(2000, function(){
             $('#bienvenue').show(1000, function(){
-                $('#accueil-part1').show(1000, function(){
-                    $('#accueil-part2').show(1000);
-                });
+                $('#accueil-part1').show(1000);
             });
         });
         
