@@ -68,14 +68,16 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 100%;
-    height: 700px;
+    height: 1000px;
 
 }
 
 #overlay {
-    background: rgba(255, 255, 255, 0.50);
+    background-image: url(images/fond-accueil.png);
+    background-repeat: no-repeat;
+    opacity: 0.8;
     height: 100%;
-    width: 50%;
+    width:100%;
     padding: 50px;
     text-align: center;
     text-transform: uppercase;
@@ -83,7 +85,8 @@ body {
 }
 
 #overlay div{
-    margin-top: 50%;
+    margin-right: 20%;
+    margin-top: 30%;
 }
 
 
