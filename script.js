@@ -12,6 +12,8 @@ $(document).ready(function () {
     $('#bienvenue').hide();
     $('#accueil-part1').hide();
     $('#accueil-part2').hide();
+    $('#accueil-part3').hide();
+    $('#accueil-part4').hide();
     
     
     $('#btn1').mouseenter(function () {
@@ -73,7 +75,13 @@ $(document).ready(function () {
         
         $('#overlay').show(2000, function(){
             $('#bienvenue').show(1000, function(){
-                $('#accueil-part1').show(1000);
+                $('#accueil-part1').show(1000, function(){
+                    $('#accueil-part2').show(1000, function(){
+                        $('#accueil-part3').show(1000,function(){
+                            $('#accueil-part4').show(1000);
+                        });
+                    });
+                });
             });
         });
         

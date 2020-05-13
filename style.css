@@ -6,7 +6,12 @@ body {
 }
 
 h2{
-    font-size: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: 'Signika', sans-serif;
 }
 
 
@@ -69,22 +74,21 @@ h2{
 }
 
 #accueil {
-    height: auto;
     background-image: url(images/accueil.jpg);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-position: right top;
-    background-size:100%;
+    background-size:cover;
+    height: 800px ;
 
 }
 
 #overlay {
-    height: auto;
+    height: 800px;
     background-image: url(images/fond2.png);
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     opacity: 0.8;
-    width: 100%;
     text-transform: uppercase;
     color: black;
 }
@@ -94,18 +98,40 @@ h2{
     padding-top: 20%;
     padding-left: 10%;
     padding-right: 60%;
+    text-align: center;
 }
 
 /* ACTIVITE*/
 
+#secteur{
+    
+}
+
 #list-sectors{
     background-color: antiquewhite;
+    text-align: center;
 }
 
 #activite li{
+    text-align: center;
     display: inline-block;
     list-style: none;
+    text-transform: uppercase;
+    margin: 20px 20px;
     
+}
+
+#fournisseurs-titre{
+    border-bottom: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 15%;
+    
+    
+}
+
+#act-1{
+   
 }
 
 
