@@ -102,13 +102,18 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 			<td colspan="2" align="left" valign="middle"><?php echo $message; ?></td>
 		  </tr>
 		  <tr>
-			<td align="right" valign="middle">Civilit&eacute;:</td>
-			<td align="left" valign="middle" nowrap="nowrap">
-			  <select name="civilite" id="civilite">
-			   <option value="??" <?php if ((!isset($_POST['civilite'])) or ($_POST['civilite']=="??")) {echo 'selected="selected"';}?>>??</option>
-			   <option value="Madame" <?php if ((isset($_POST['civilite'])) and($_POST['civilite']=="Madame")) {echo 'selected="selected"';}?>>Madame</option>
-			   <option value="Monsieur" <?php if ((isset($_POST['civilite'])) and($_POST['civilite']=="Monsieur")) {echo 'selected="selected"';}?>>Monsieur</option>
-			  </select>
+			<td align="right" valign="middle">Vitesse d'ex&eacute;cution </td>
+			<td align="left" valign="middle" nowrap="nowrap" class="starRating">
+				<input id="rating5" type="radio" name="rating" value="5">
+				<label for="rating5">5</label>
+				<input id="rating4" type="radio" name="rating" value="4">
+				<label for="rating4">4</label>
+				<input id="rating3" type="radio" name="rating" value="3">
+				<label for="rating3">3</label>
+				<input id="rating2" type="radio" name="rating" value="2">
+				<label for="rating2">2</label>
+				<input id="rating1" type="radio" name="rating" value="1">
+				<label for="rating1">1</label>
 			</td>
 		  </tr>
 		
@@ -140,6 +145,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 		  </tr>
 	  </table>
   </form>
+  
   <?php
     } // fin du if
 	else {echo $message;}
