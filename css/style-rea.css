@@ -176,3 +176,18 @@ Main components
   -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
 }
+
+
+#information {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#information ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+

@@ -6,7 +6,7 @@ body {
 }
 
 h2{
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
 }
 
@@ -19,75 +19,97 @@ h3{
                                                         /* ENTETE*/
 
 #entete {
-    height: 200px;
     background-image:url(images/mur-texture.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px solid darkgrey;
-    
+    height: 280px;
 }
 
 .logo-bandeau{
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
     height: 180px;
+    padding: 30px;
 }
 
-                                                        /*MENU*/
-
-
-#menu{
-}
-.navbar-color {
-    background-color: white;
-    margin-bottom: 0px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-bottom: 3px solid darkgrey;
-}
-
-.navi {
-    border-radius: 0;
-}
-
-.navbar-toggle {
+.menu-btn {
+    display: none;
     border: 2px solid;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 50px;
+    border-radius: 10px;
+  
+    
 }
+
+
+@media only screen and (max-width:1050px){
+    
+    #entete {
+    background-image:url(images/mur-blanc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid darkgrey;
+    height: 280px;
+}
+    
+    .logo-bandeau{
+    height: 180px;
+    padding: 30px;
+    text-align: center;
+    }
+    
+    .menu-btn{
+    border: 2px solid;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 50px;
+    border-radius: 10px;
+    }
+    
+    #list ul{
+        display: none;
+    }
+     
+    
+}
+
+.navi{
+    padding-top: 20px;
+}
+
+
+
+
 
 .icon-bar {
-    background-color: black;
+    display: block;
+    margin: 6px;
+    width: 70%;
+    height: 2px;
+    border: 1px solid;
+    
 }
 
-
-
-#menu ul {
+#list ul{
+    list-style-type: none;
     text-align: center;
+    margin : 20px 0;
+}
+#list ul li{
+    display: inline-block;
+    margin: 0 8px;
 }
 
-.nav li {
-    text-align: center;
-    margin: 5px 10px 5px 30px;
-    padding: 5px 5px;
-}
 
-
-.in {
-    position: relative;
-    display: none;
-}
-
-.out {
-    position: absolute;
-}
 
                                                         /*CONTENT*/
 
 /* ACCUEIL*/
 
-#main { 
 
-}
 
 #accueil {
     background-image: url(images/accueil.jpg);
@@ -124,9 +146,7 @@ h3{
 
 /* ACTIVITE*/
 
-#secteur{
-    
-}
+
 
 #list-sectors{
     background-image: url(images/mur-blanc.png);
@@ -158,4 +178,12 @@ h3{
     
 }
 
+
                                                         /*FOOTER*/
+
+
+
+
+
+
+
