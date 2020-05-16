@@ -19,7 +19,7 @@ h3{
                                                         /* ENTETE*/
 
 #entete {
-    background-image:url(images/mur-texture.png);
+    background-image:url(images/mur-rouleau.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px solid darkgrey;
@@ -29,81 +29,102 @@ h3{
 .logo-bandeau{
     height: 180px;
     padding: 30px;
+    margin-bottom: 20px;
+    padding: 60px;
 }
 
-.menu-btn {
-    visibility: hidden;
-    border: 2px solid;
-    width: 40px;
-    height: 40px;
-    float: right;
-    margin-right: 50px;
-    border-radius: 10px;
-  
-    
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+background-image: url(images/nav-icon.png);
+    background-size: cover;
+  font-size: 24px;
+    border: 2px solid black;
+    border-radius: 50px solid;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.active {
+  display: block;
 }
 
 
-@media only screen and (max-width:1050px){
+@media screen and (max-width: 768px){
     
     #entete {
     background-image:url(images/mur-blanc.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px solid darkgrey;
-    height: 280px;
+    height: auto;
 }
     
-    .logo-bandeau{
-    height: 180px;
-    padding: 30px;
-    text-align: center;
-    }
-    
-    .menu-btn{
-    visibility: visible;
-    border: 2px solid;
-    width: 50px;
-    height: 50px;
-    float: right;
-    margin-right: 50px;
-    border-radius: 10px;
-    }
-    
-    #list{
-        display: none;
-    }
-     
-    
 }
 
-.navi{
-    padding-top: 20px;
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
 }
 
 
 
 
-
-.icon-bar {
-    display: block;
-    margin: 6px;
-    width: 70%;
-    height: 2px;
-    border: 1px solid;
-    
-}
-
-#list ul{
-    visibility: visible;
-    list-style-type: none;
-    text-align: center;
-    margin : 20px 0;
-}
-#list ul li{
-    display: inline-block;
-    margin: 0 8px;
-}
 
 
 
