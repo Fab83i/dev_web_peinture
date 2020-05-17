@@ -1,32 +1,32 @@
-                                                        /* GENERAL */
+/* GENERAL */
 
 body {
     font-family: "Lato", sans-serif;
     font-size: 15px;
 }
 
-h2{
+h2 {
     font-size: 35px;
     text-transform: uppercase;
 }
 
-h3{
+h3 {
     font-family: 'Signika', sans-serif;
 }
 
 
 
-                                                        /* ENTETE*/
+/* ENTETE*/
 
 #entete {
-    background-image:url(images/mur-rouleau.png);
+    background-image: url(images/mur-rouleau.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px solid darkgrey;
     height: 280px;
 }
 
-.logo-bandeau{
+.logo-bandeau {
     height: 180px;
     padding: 30px;
     margin-bottom: 20px;
@@ -34,35 +34,35 @@ h3{
 }
 
 .navbar {
-  font-size: 18px;
-  padding-bottom: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
 .main-nav {
-  list-style-type: none;
-  display: none;
+    list-style-type: none;
+    display: none;
 }
 
 .main-nav li {
-  text-align: center;
-  margin: 15px auto;
+    text-align: center;
+    margin: 15px auto;
 }
 
 .logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-background-image: url(images/nav-icon.png);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url(images/nav-icon.png);
     background-size: cover;
-  font-size: 24px;
+    font-size: 24px;
     border: 2px solid black;
     border-radius: 50px solid;
     width: 50px;
@@ -71,80 +71,129 @@ background-image: url(images/nav-icon.png);
 }
 
 .active {
-  display: block;
+    display: block;
 }
 
 
-@media screen and (max-width: 768px){
-    
+@media screen and (max-width: 768px) {
+
     #entete {
-    background-image:url(images/mur-blanc.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: 4px solid darkgrey;
+        background-image: url(images/mur-blanc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 4px solid darkgrey;
+        height: auto;
+    }
+
+}
+
+
+#adapt-accueil{
+    width: 100%;
     height: auto;
 }
+
+/*AFFICHAGE GRAND ECRAN*/
+
+@media all and (min-width: 768px) {
+
+    /* MENU ET ENTETE */
     
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+    
+    
+    
+    /* FIN MENU ET ENTETE */
+    
+    /*PRESENTATION AVEC IMAGE ACCUEIL*/
+
+    #accueil {
+        background-image: url(images/accueil.jpg);
+        background-repeat: repeat;
+        background-position: right top;
+        background-size: cover;
+        height: 800px;
+
+    }
+    
+    #overlay {
+        width: 100%;
+        height: 800px;
+        background-image: url(images/fond2.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    #overlay div {
+        font-size: 1px;
+        padding-top: 20%;
+        padding-left: 10%;
+        padding-right: 60%;
+        text-align: center;
+        color: #5A2206;
+    }
+
+    #overlay div h2,
+    h3 {
+        color: #301203;
+    }
+
+    #accueil-smart, #overlay-smart {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+/* FIN PRESENTATION*/
 
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-}
+/* FIN GRAND ECRAN*/
 
 
 
+/* AFFICHAGE SMARTPHONE*/
 
-
-
-
-                                                        /*CONTENT*/
-
-/* ACCUEIL*/
-
-
-
-#accueil {
+#accueil-smart {
     background-image: url(images/accueil.jpg);
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-position: right top;
-    background-size:cover;
-    height: 800px ;
+    background-size: cover;
 
 }
-
-#overlay {
-    height: 800px;
+#overlay-smart {
+    height: 400px;
     background-image: url(images/fond2.png);
     background-position: left top;
     background-repeat: no-repeat;
@@ -154,59 +203,64 @@ background-image: url(images/nav-icon.png);
     color: black;
 }
 
-#overlay div{
-    font-size: 15px;
-    padding-top: 20%;
+#overlay-smart div {
+    padding-top: 10%;
     padding-left: 10%;
     padding-right: 60%;
     text-align: center;
     color: #5A2206;
 }
 
-#overlay div h2{
-    color: #301203;
+#overlay-smart div h2{
+    font-size: 20px;
+    
 }
+
+#overlay-smart div h3 {
+    color: #301203;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
 
 /* ACTIVITE*/
 
 
 
-#list-sectors{
+#list-sectors {
     background-image: url(images/mur-blanc.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
 
-#activite li{
+#activite li {
     text-align: center;
     display: inline-block;
     list-style: none;
     text-transform: uppercase;
     margin: 20px 20px;
     transition: all .2s;
-    
+
 }
 
-#activite li:hover{
+#activite li:hover {
     transform: scale(1.1);
 }
 
-#fournisseurs-titre{
+#fournisseurs-titre {
     border-bottom: 2px solid black;
     padding-top: 20px;
     padding-bottom: 10px;
     margin: 0 15%;
-    
-    
+
+
 }
 
 
-                                                        /*FOOTER*/
-
-
-
-
-
-
-
+/*FOOTER*/

@@ -9,11 +9,16 @@ $(document).ready(function () {
     $('#btn5-out').hide();
     $('#btn6-out').hide();
     $('#overlay').hide();
+    
+    
     $('#bienvenue').hide();
     $('#accueil-part1').hide();
     $('#accueil-part2').hide();
     $('#accueil-part3').hide();
     $('#accueil-part4').hide();
+    
+    
+    
 
 
     $('#btn1').mouseenter(function () {
@@ -92,6 +97,15 @@ $(document).ready(function () {
 
     init();
 
+    if(window.innerWidth < 768){
+        $('#accueil').hide();
+        $('#overlay').hide();
+       
+       }
+    else if(window.innerWidth > 768){
+        $('#accueil-smart').hide();
+        $('#overlay-smart').hide();
+    };
 
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
