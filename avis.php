@@ -89,7 +89,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Demande de devis</title>
+<title>Vos avis</title>
 <link href="style1.css" rel="stylesheet" type="text/css" />
 </head>
 

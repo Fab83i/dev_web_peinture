@@ -39,7 +39,7 @@ $afficheformulaire="oui";
 
 if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer")) 
  { // Clic sur bouton envoyer
-   // VÃ©rifier que les champs sont remplis
+   // Vérifier que les champs sont remplis
   $ok="oui";
   if ($_POST['nom']=="") 
    {
@@ -79,83 +79,22 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 		  $message="Votre devis nous a bien &eacute;t&eacute; transmis. Vous aurez de nos nouvelles tr&eacute;s bient&ocirc;t !"; 
 		  $afficheformulaire="non";
 		}
-		  else {$message="Erreur ! Le message n'a peut Ãªtre pas &eacute;t&eacute; transmis";};
+		  else {$message="Erreur ! Le message n'a peut être pas &eacute;t&eacute; transmis";};
 	   
    }
  }
 ?>
 
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title> JMP / Couleur arc-en-ciel</title>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale-1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Demande de devis</title>
+<link href="style1.css" rel="stylesheet" type="text/css" />
 </head>
 
-    <body>
-            <section id="entete">
-
-        <div class=" logo-bandeau">
-            <a href="index.html"><img src="images/logo%20groupe.png" width="300"></a>
-        </div>
-
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a id="btn1" href="savoir-etre.html">
-                                <div id="btn1-in"><img id="mouseleave" src="images/savoir-faire.png" width="133px" height="35"> </div>
-                                <div id="btn1-out"><img id="mouseenter" src="images/sf-survol.png" width="150px" height="50"></div>
-                            </a>
-                </li>
-                <li>
-                    <a id="btn2" href="index.html">
-                                <div id="btn2-in"><img id="mouseleave" src="images/accueil-btn.png" width="133px" height="35"> </div>
-                                <div id="btn2-out"><img id="mouseenter" src="images/accueil-survol.png" width="150px" height="100%"></div>
-                            </a>
-                </li>
-                <li>
-                    <a id="btn3" href="rea.html">
-                                <div id="btn3-in"><img id="mouseleave" src="images/rea.png" width="133px" height="35"> </div>
-                                <div id="btn3-out"><img id="mouseenter" src="images/rea-survol.png" width="150px" height="100%"></div>
-                            </a>
-                </li>
-                <li>
-                    <a id="btn4" href="avis.html">
-                                <div id="btn4-in"><img id="mouseleave" src="images/avis.png" width="133px" height="35"> </div>
-                                <div id="btn4-out"><img id="mouseenter" src="images/avis-survol.png" width="150px" height="100%"></div>
-                            </a>
-                </li>
-                <li>
-                    <a id="btn5" href="contact.html">
-                                <div id="btn5-in"><img id="mouseleave" src="images/contact.png" width="133px" height="35"> </div>
-                                <div id="btn5-out"><img id="mouseenter" src="images/contact-survol.png" width="150px" height="100%"></div>
-                            </a>
-                </li>
-                <li>
-                    <a id="btn6" href="devis.html">
-                                <div id="btn6-in"><img id="mouseleave" src="images/devis.png" width="133px" height="35"> </div>
-                                <div id="btn6-out"><img id="mouseenter" src="images/devis-survol.png" width="150px" height="100%"></div>
-                            </a>
-                    
-                </li>
-            </ul>
-        </nav>
-    </section>
-	<section id="content">
-	 <div class="formulaire" id="formulaire">
+<body>
+<div class="formulaire" id="formulaire">
 <?php if ($afficheformulaire=="oui") { ?>
 	<form action="" method="post" enctype="application/x-www-form-urlencoded" name="demande_devis">
 		<table width="200" border="0" align="center" class="formulaire">
@@ -206,7 +145,5 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 	else {echo $message;}
   ?>	
 </div>
-
-	</section>
-    </body>
+</body>
 </html>

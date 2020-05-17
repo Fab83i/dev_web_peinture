@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('#btn4-out').hide();
     $('#btn5-out').hide();
     $('#btn6-out').hide();
-    $('#overlay').hide();
+  //  $('#overlay').hide();
     
     
     $('#bienvenue').hide();
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     init = function () {
 
-        $('#overlay').show(2000, function () {
+        $('#overlay').animate({backgroundPositionX:"+=750px"},3000, function () {
             $('#bienvenue').show(1000, function () {
                 $('#accueil-part1').show(500, function () {
                     $('#accueil-part2').show(500, function () {
