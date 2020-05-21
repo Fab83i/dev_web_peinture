@@ -75,7 +75,7 @@ $(document).ready(function () {
         $('#btn6-out').hide();
     });
 
-
+ 
     init = function () {
 
         $('#overlay').animate({backgroundPositionX:"+=750px"},3000, function () {
@@ -94,8 +94,9 @@ $(document).ready(function () {
 
 
     };
+    
+   init();
 
-    init();
 
     if(window.innerWidth < 768){
         $('#accueil').hide();
@@ -114,8 +115,7 @@ $(document).ready(function () {
         mainNav.classList.toggle("active");
     });
 
-
-
-
+ $('[data-toggle="tooltip"]').tooltip();
+    
 
 });

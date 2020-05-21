@@ -226,8 +226,36 @@ h3 {
 }
 
 
+#avis-texte{
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 15%;
+}
 
+.carousel-inner .item{
+    text-align: center;
+    position: centered;
+    height: 200px;
+}
 
+.carousel-control.left{
+    background-image: none;
+}
+
+.carousel-control.right{
+    background-image: none;
+}
+
+.item p{
+    margin-top: 100px;
+}
+
+#monCarousel ol li{
+    background-color: black;
+    color: black;
+}
 
 
 
@@ -265,6 +293,8 @@ h3 {
 }
 
 
+
+
 /*FOOTER*/
 
 #pied{
@@ -275,3 +305,17 @@ h3 {
     background-position: right top;
     height: 200px;;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
