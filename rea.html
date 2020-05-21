@@ -78,6 +78,7 @@
 
     <section id="Main">
 
+        <!-- PEINTURE INT -->
         <!--TITRE CATEGORIE -->
         <div id="peinture">
             <h1 style="font-family: 'Merienda One', sans-serif;">De la peinture ...</h1>
@@ -102,8 +103,7 @@
 
         <!--EXPLICATION CATEGORIE -->
         <div id="texte-explication">
-            <p> BLA BLA BLA BLA BLA BLA</p>
-            <p> BLA BLA BLA BLA BLA BLA</p>
+            <p>En utilisant des produits de qualité, nous vous garantissons un résultat parfait. <br>JMP & Couleur arc-en-ciel partagent leur savoir-faire pour faire de votre intérieur un lieu chaleureux et convivable.</p>
         </div>
         <!-- FIN EXPLICATION CATEGORIE -->
 
@@ -128,8 +128,8 @@
                 </tr>
                 <tr>
                     <td><img src="images/tadlac-progress.jpg" alt="orange" onmouseover="change('images/tadlac-progress.jpg')"></td>
-                    <td><img src="images/unknow.jpeg" alt="orange"></td>
-                    <td><img src="images/unknow.jpeg" alt="orange"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
                 </tr>
             </table>
             <div id="affichage">
@@ -138,6 +138,7 @@
         </div>
         <!-- FIN MOSAIQUE -->
 
+         <!-- RENOVATION -->
         <!--TITRE RENOVATION -->
         <div id="renovation">
             <h1 style="font-family: 'Merienda One', sans-serif;">... De la rénovation ...</h1>
@@ -163,16 +164,46 @@
 
         <!--EXPLICATION -->
         <div id="texte-explication">
-            <p> BLA BLA BLA BLA BLA BLA</p>
-            <p> BLA BLA BLA BLA BLA BLA</p>
+            <p> La rénovation fait également partie de nos compétences. Des plafonds, aux cages d'escaliers, en passant par tout type d'architecture, nous serons en mesure de vous satisfaire et de réaliser au mieux vos envies.</p>
         </div>
         <!--FIN EXPLICATION -->
+        
+         <!--MOSAIQUE -->
+        <div id="mosaique">
+            <script type="text/javascript">
+                function changereno(imageaaffiche) {
+                    document.getElementById('reno').src = imageaaffiche;
+                }
+            </script>
+            <table id="mosa">
+                <tr>
+                    <td><img src="images/plafond1.jpg" alt="orange" onmouseover="changereno('images/plafond1.jpg')"></td>
+                    <td><img src="images/plafond2.jpg" alt="violet" onmouseover="changereno('images/plafond2.jpg')"></td>
+                    <td><img src="images/esc1.jpg" alt="fenetre" onmouseover="changereno('images/esc1.jpg')"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/esc2.jpg" alt="bandes" onmouseover="changereno('images/esc2.jpg')"></td>
+                    <td><img src="images/esc3.jpg" alt="marron" onmouseover="changereno('images/esc3.jpg')"></td>
+                    <td><img src="images/esc4.jpg" alt="orange" onmouseover="changereno('images/esc4.jpg')"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/esc5.jpg" alt="orange" onmouseover="changereno('images/esc5.jpg')"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                </tr>
+            </table>
+            <div id="affichage">
+                <img id='reno' src="images/orange.jpg">
+            </div>
+        </div>
+        <!-- FIN MOSAIQUE -->
 
 
 
+         <!-- PEINTURE EXT -->
         <!--TITRE FACADE -->
         <div id="façade">
-            <h1 style="font-family: 'Merienda One', sans-serif;">... Des façades</h1>
+            <h1 style="font-family: 'Merienda One', sans-serif;">... De la peinture extérieure</h1>
         </div>
         <!--FIN TITRE FACADE -->
 
@@ -191,6 +222,42 @@
         <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
         <script src="js/main.js"></script> <!-- Resource jQuery -->
         <!--FIN LSIDER FACADE -->
+        
+        <!--EXPLICATION -->
+        <div id="texte-explication">
+            <p> Votre extérieur semble prendre de l'âge ? <br> Nous sommes en mesure de lui redonner son éclat d'antant en faisant s'exprimer, à nouveau, sa couleur. Ou encore en lui redonnant vie avec de nouvelles teintes.</p>
+        </div>
+        <!--FIN EXPLICATION -->
+        
+        <!--MOSAIQUE -->
+        <div id="mosaique">
+            <script type="text/javascript">
+                function changefacade(imageaaffiche) {
+                    document.getElementById('facade').src = imageaaffiche;
+                }
+            </script>
+            <table id="mosa">
+                <tr>
+                    <td><img src="images/facade1.jpg" alt="orange" onmouseover="changefacade('images/facade1.jpg')"></td>
+                    <td><img src="images/facade2.jpg" alt="violet" onmouseover="changefacade('images/facade2.jpg')"></td>
+                    <td><img src="images/facade3.jpg" alt="fenetre" onmouseover="changefacade('images/facade3.jpg')"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/facade-avant.jpg" alt="bandes" onmouseover="changefacade('images/facade-avant.jpg')"></td>
+                    <td><img src="images/facade-apres.jpg" alt="marron" onmouseover="changefacade('images/facade-apres.jpg')"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                </tr>
+            </table>
+            <div id="affichage">
+                <img id='facade' src="images/orange.jpg">
+            </div>
+        </div>
+        <!-- FIN MOSAIQUE -->
 
     </section>
 
