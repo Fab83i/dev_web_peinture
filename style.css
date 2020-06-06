@@ -15,6 +15,96 @@ h3 {
     font-family: 'Signika', sans-serif;
 }
 
+/*table td{
+padding-right: 20px;
+padding-top: 20px;
+}
+*/
+/* TABLEAUX */
+#section_avis {
+	position: relative;
+	left: 5%;
+	width: 80%;
+	overflow-y: visible;
+}
+
+#formulaire {
+	position: relative;
+	left: 5%;
+	width: 80%;
+	overflow-y: visible;
+}
+
+#fond {
+	width: 100%;
+}
+
+
+.champs {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #333333;
+	padding-right: 20px;
+    padding-top: 20px;
+}
+
+.champsadit {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #000000;
+	padding-right: 20px;
+    padding-top: 20px;
+}
+.champsavis {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #333333;
+}
+
+.champsaviscomment {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	line-height: normal;
+	font-weight: normal;
+	color: #333333;
+}
+.titre {
+	font-family: 'Merienda One', 'Lato', sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: bold;
+	color: #0099FF;
+	line-height: normal;
+}
+
+.soustitre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	color: #0099FF;
+	line-height: normal;
+}
+
+.information {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #0099FF;
+	line-height: normal;
+}
+
 
 /* ENTETE*/
 
@@ -88,13 +178,6 @@ h3 {
         border-bottom: 4px solid #462100;
         height: auto;
     }
-    .logo-bandeau {
-        text-align: center;
-}
-    
-    .logo-bandeau img{
-    width: 300px;
-}
 
 }
 
@@ -142,7 +225,7 @@ h3 {
         display: none;
     }
     
-    
+  
     
     /* FIN MENU ET ENTETE */
     
@@ -319,17 +402,3 @@ h3 {
     background-position: right top;
     height: 200px;;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

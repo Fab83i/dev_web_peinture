@@ -39,7 +39,7 @@ $afficheformulaire="oui";
 
 if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer")) 
  { // Clic sur bouton envoyer
-   // VÃ©rifier que les champs sont remplis
+   // V?rifier que les champs sont remplis
   $ok="oui";
   if ($_POST['nom']=="") 
    {
@@ -79,34 +79,35 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 		  $message="Votre devis nous a bien &eacute;t&eacute; transmis. Vous aurez de nos nouvelles tr&eacute;s bient&ocirc;t !"; 
 		  $afficheformulaire="non";
 		}
-		  else {$message="Erreur ! Le message n'a peut Ãªtre pas &eacute;t&eacute; transmis";};
+		  else {$message="Erreur ! Le message n'a peut ?tre pas &eacute;t&eacute; transmis";};
 	   
    }
  }
 ?>
 
 <!DOCTYPE html>
-<html>
+<html><!-- InstanceBegin template="/Templates/modele.dwt" codeOutsideHTMLIsLocked="false" -->
 
 <head>
     <title> JMP / Couleur arc-en-ciel</title>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale-1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/style1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 
 </head>
 
     <body>
-            <section id="entete">
+    <section id="entete">
 
         <div class=" logo-bandeau">
-            <a href="index.html"><img src="images/logo%20groupe.png" width="300"></a>
+            <a href="/index.html"><img src="/images/logo%20groupe.png" width="500"></a>
         </div>
 
         <nav class="navbar">
@@ -115,90 +116,108 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
             </span>
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a id="btn1" href="savoir-etre.html">
-                                <div id="btn1-in"><img id="mouseleave" src="images/savoir-faire.png" width="133px" height="35"> </div>
-                                <div id="btn1-out"><img id="mouseenter" src="images/sf-survol.png" width="150px" height="50"></div>
-                            </a>
+                    <a id="btn1" href="/savoir-etre.html">
+                        <div id="btn1-in"><img id="mouseleave" src="/images/btn/savoir-faire.png" width="171px" height="64"> </div>
+                        <div id="btn1-out"><img id="mouseenter" src="/images/btn/sf-survol.png"  width="171px" height="64"></div>
+                    </a>
                 </li>
                 <li>
-                    <a id="btn2" href="index.html">
-                                <div id="btn2-in"><img id="mouseleave" src="images/accueil-btn.png" width="133px" height="35"> </div>
-                                <div id="btn2-out"><img id="mouseenter" src="images/accueil-survol.png" width="150px" height="100%"></div>
-                            </a>
+                    <a id="btn2" href="/index.html">
+                        <div id="btn2-in"><img id="mouseleave" src="/images/btn/accueil-btn.png"  width="171px" height="64"> </div>
+                        <div id="btn2-out"><img id="mouseenter" src="/images/btn/accueil-survol.png"  width="171px" height="64"></div>
+                    </a>
                 </li>
                 <li>
-                    <a id="btn3" href="rea.html">
-                                <div id="btn3-in"><img id="mouseleave" src="images/rea.png" width="133px" height="35"> </div>
-                                <div id="btn3-out"><img id="mouseenter" src="images/rea-survol.png" width="150px" height="100%"></div>
-                            </a>
+                    <a id="btn3" href="/rea.html">
+                        <div id="btn3-in"><img id="mouseleave" src="/images/btn/rea.png"  width="171px" height="64"> </div>
+                        <div id="btn3-out"><img id="mouseenter" src="/images/btn/rea-survol.png"  width="171px" height="64"></div>
+                    </a>
                 </li>
                 <li>
-                    <a id="btn4" href="avis.html">
-                                <div id="btn4-in"><img id="mouseleave" src="images/avis.png" width="133px" height="35"> </div>
-                                <div id="btn4-out"><img id="mouseenter" src="images/avis-survol.png" width="150px" height="100%"></div>
-                            </a>
+                    <a id="btn4" href="/avis.php">
+                        <div id="btn4-in"><img id="mouseleave" src="/images/btn/avis.png" width="171px" height="64"> </div>
+                        <div id="btn4-out"><img id="mouseenter" src="/images/btn/avis-survol.png"  width="171px" height="64"></div>
+                    </a>
                 </li>
                 <li>
-                    <a id="btn5" href="contact.html">
-                                <div id="btn5-in"><img id="mouseleave" src="images/contact.png" width="133px" height="35"> </div>
-                                <div id="btn5-out"><img id="mouseenter" src="images/contact-survol.png" width="150px" height="100%"></div>
-                            </a>
+                    <a id="btn5" href="/contact.html">
+                        <div id="btn5-in"><img id="mouseleave" src="/images/btn/contact.png"  width="171px" height="64"> </div>
+                        <div id="btn5-out"><img id="mouseenter" src="/images/btn/contact-survol.png"  width="171px" height="64"></div>
+                    </a>
                 </li>
                 <li>
-                    <a id="btn6" href="devis.html">
-                                <div id="btn6-in"><img id="mouseleave" src="images/devis.png" width="133px" height="35"> </div>
-                                <div id="btn6-out"><img id="mouseenter" src="images/devis-survol.png" width="150px" height="100%"></div>
-                            </a>
-                    
+                    <a id="btn6" href="/devis.php">
+                        <div id="btn6-in"><img id="mouseleave" src="/images/btn/devis.png"  width="171px" height="64"> </div>
+                        <div id="btn6-out"><img id="mouseenter" src="/images/btn/devis-survol.png" width="171px" height="64"></div>
+                    </a>
+
                 </li>
             </ul>
         </nav>
+
     </section>
-	<section id="content">
-	 <div class="formulaire" id="formulaire">
+    <!-- InstanceBeginEditable name="EditRegion1" -->
+    <section>
+	<div id="formulaire">
 <?php if ($afficheformulaire=="oui") { ?>
-	<form action="" method="post" enctype="application/x-www-form-urlencoded" name="demande_devis">
-		<table width="200" border="0" align="center" class="formulaire">
+	<form action="" method="post" enctype="" name="demande_devis">
+		<table width="90%" border="0" align="center">
 		  <tr>
-			<td colspan="2" align="left" valign="middle"><?php echo $message; ?></td>
+			<td colspan="2" align="left" height="30" valign="middle"><?php echo $message; ?></td>
 		  </tr>
 		  <tr>
-			<td align="right" valign="middle">Civilit&eacute;:</td>
-			<td align="left" valign="middle" nowrap="nowrap">
-			  <select name="civilite" id="civilite">
-			   <option value="??" <?php if ((!isset($_POST['civilite'])) or ($_POST['civilite']=="??")) {echo 'selected="selected"';}?>>??</option>
-			   <option value="Madame" <?php if ((isset($_POST['civilite'])) and($_POST['civilite']=="Madame")) {echo 'selected="selected"';}?>>Madame</option>
-			   <option value="Monsieur" <?php if ((isset($_POST['civilite'])) and($_POST['civilite']=="Monsieur")) {echo 'selected="selected"';}?>>Monsieur</option>
-			  </select>
+			<td colspan="2" align="left" height="50" valign="middle" class="titre">Pour une demande de devis, veuillez remplir le formulaire ci dessous : </td>
+		  </tr>
+		  
+		  <tr>
+			<td width="19%" height="30" align="right" valign="middle" class="champs" >Civilit&eacute;<span style="color: #FF0000">*</span>:&nbsp;</td>
+			<td width="81%" align="left" valign="middle" nowrap="nowrap">
+			<table width="50%">
+			 <tr>
+		       <td align="center" valign="middle" class="champs"><input name="civilite" type="radio" id="civilite" value="Monsieur" checked="checked" /> Monsieur</td>
+		       <td align="center" valign="middle" class="champs"> <input name="civilite" type="radio" id="civilite" value="Madame" /> Madame</td>
+			 </tr>
+			 </table>
 			</td>
 		  </tr>
 		
 		  <tr>
-			<td align="right" valign="middle">NOM:</td>
-			<td align="left" valign="middle" nowrap="nowrap"><input name="nom" type="text" />&nbsp;</td>
+			<td align="right" valign="middle" class="champs">NOM<span style="color: #FF0000">*</span>:</td>
+			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="nom" type="text" size="50" />&nbsp;</td>
 		  </tr>
 		  <tr>
-			<td align="right" valign="middle">Pr&eacute;nom:</td>
-			<td align="left" valign="middle" nowrap="nowrap"><input name="prenom" type="text" />&nbsp;</td>
+			<td align="right" valign="middle" class="champs">Pr&eacute;nom<span style="color: #FF0000">*</span>:</td>
+			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="prenom" type="text" size="50" />&nbsp;</td>
 		  </tr>
 		  <tr>
-			<td align="right" valign="middle">Email:</td>
-			<td align="left" valign="middle" nowrap="nowrap"><input name="email" type="text" />&nbsp;</td>
+			<td align="right" valign="middle" class="champs">Email<span style="color: #FF0000">*</span>:</td>
+			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="email" type="text"size="50" />&nbsp;</td>
 		  </tr>
 		  <tr>
-			<td align="right" valign="middle">T&eacute;l&eacute;phone:</td>
-			<td align="left" valign="middle" nowrap="nowrap"><input name="tel" type="text" />&nbsp;</td>
+			<td align="right" valign="middle" class="champs">T&eacute;l&eacute;phone<span style="color: #FF0000">*</span>:</td>
+			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="tel" type="text" size="50"/>&nbsp;</td>
 		  </tr>
 		  <tr>
-			<td align="right" valign="middle">Descriptif des travaux: </td>
-			<td align="left" valign="middle"><textarea name="descriptif" cols="" rows=""></textarea>&nbsp;</td>
+			<td colspan="2" align="left" height="30" valign="middle"></td>
+		  </tr>
+		  <tr>
+			<td colspan="2" align="left" valign="middle" class="champs">Descriptif des travaux:</td>
+		  </tr>
+		  <tr>
+			<td colspan="2" align="left" valign="middle" class="champs"><textarea name="descriptif" cols="70" rows="10" ></textarea>
+			&nbsp;</td>
 		  </tr>
   		  <tr>
-			<td colspan="2" align="right" valign="middle"><input name="Envoyer" type="submit" value="Envoyer" id="Envoyer" /></td>
+			<td colspan="2" align="middle" valign="middle" class="champs"><input name="Envoyer" type="submit" id="Envoyer" value="Envoyer" /></td>
 		  </tr>
   		  <tr>
-			<td colspan="2" align="right" valign="middle"><input type="hidden" name="ID" id="ID" /></td>
+			<td colspan="2" align="right" valign="middle" class="champs"><input name="ID" type="hidden" id="ID" /></td>
 		  </tr>
+		  <tr>
+			<td colspan="2" align="left" height="30" valign="middle" class="information"><p>Vous recevrez par email une confirmation de r&eacute;ception de votre demande. </p>
+			  Les informations demand&eacute;es dans ce formulaire servent &agrave; traiter votre demande et &agrave; vous recontacter. Elles ne sont et ne seront en aucun cas c&eacute;d&eacute;es &agrave; des tiers pour quelque raison que ce soit.</td>
+		  </tr>
+		  
 	  </table>
   </form>
   <?php
@@ -206,7 +225,14 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 	else {echo $message;}
   ?>	
 </div>
+</section>
+    <!-- InstanceEndEditable -->
+	    <section id="footer">
+        <div id="pied">
+        </div>
+    </section>
+    
+    <p style="text-align: center;">© 2020 JMP & CouleurArcEnCiel - Tous droits réservés</p>
 
-	</section>
     </body>
-</html>
+<!-- InstanceEnd --></html>
