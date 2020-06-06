@@ -178,6 +178,14 @@ padding-top: 20px;
         border-bottom: 4px solid #462100;
         height: auto;
     }
+    
+    .logo-bandeau {
+        text-align: center;
+}
+    
+    .logo-bandeau img{
+    width: 300px;
+}
 
 }
 
