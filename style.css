@@ -22,21 +22,23 @@ padding-top: 20px;
 */
 /* TABLEAUX */
 #section_avis {
-	position: relative;
-	left: 5%;
-	width: 80%;
+	text-align:center;
+	width: 100%;
 	overflow-y: visible;
 }
 
 #formulaire {
-	position: relative;
-	left: 5%;
-	width: 80%;
+    text-align:center;
+	width: 100%;
 	overflow-y: visible;
 }
 
 #fond {
 	width: 100%;
+}
+
+.tableId {
+ text-align:center;
 }
 
 

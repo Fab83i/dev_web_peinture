@@ -184,7 +184,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
     <!-- InstanceBeginEditable name="EditRegion1" -->
 	<div id="fond">
 	  <div id="section_avis">
-	     <table border="0" width="500" align="center">
+	     <table border="0" class="tableId">
 	      <tr>
   		    <td colspan="6" align="left" valign="middle" class="champsadit"><?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom'].":";}?></td>
 		  </tr>
@@ -259,7 +259,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 	  <div id="formulaire">
 <?php if ($afficheformulaire=="oui") { ?>
 	<form action="" method="post" enctype="" name="demande_avis">
-    	<table width="80%" border="0" align="center">
+    	<table border="0" class="tableId">
 		  <tr>
 			<td colspan="2" align="middle" height="80" valign="middle" class="titre">Que pensez vous de nous ? </td>
 		  </tr>
@@ -287,7 +287,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 			<td align="left" width="60%" valign="middle" nowrap="nowrap" class="champs"><input name="email" type="text" size="30" />&nbsp;</td>
 		  </tr>
 		</table>
-		<table width="50%" border="0" align="center">
+		<table border="0" class="tableId">
 		  <tr>
 			<td colspan="2" height="40" class="soustitre"></td>
 		  </tr>
@@ -298,8 +298,8 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 			<td colspan="2" height="20" class="soustitre"></td>
 		  </tr>
 		  <tr>
-    	    <td  width="60%" align="left" valign="middle" class="champsavis" >Vitesse d'ex&eacute;cution</td>
-			<td  width="40%" rowspan="2" align="left" valign="middle" nowrap="nowrap" class="starRating">
+    	    <td  align="left" valign="middle" class="champsavis" >Vitesse d'ex&eacute;cution</td>
+			<td rowspan="2" align="left" valign="middle" nowrap="nowrap" class="starRating">
 				<input id="Vrating5" type="radio" name="Vrating" value="5">
 				<label for="Vrating5">5</label>
 				<input id="Vrating4" type="radio" name="Vrating" value="4">
@@ -399,7 +399,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
   		   <tr>
 			<td colspan="2" align="right" valign="middle" class="champs"><input name="ID" type="hidden" id="ID" /></td>
 		   </tr>
-	 	  </table>
+ 	  </table>
   </form>
   
   <?php
@@ -414,7 +414,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
         </div>
     </section>
     
-    <p style="text-align: center;">© 2020 JMP & CouleurArcEnCiel - Tous droits réservés</p>
+    <p style="text-align: center;">ï¿½ 2020 JMP & CouleurArcEnCiel - Tous droits rï¿½servï¿½s</p>
 
     </body>
 <!-- InstanceEnd --></html>
