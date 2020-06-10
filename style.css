@@ -16,17 +16,8 @@ h3 {
 }
 
 
-/*table td{
-padding-right: 20px;
-padding-top: 20px;
-}
-*/
 /* TABLEAUX */
-#section_avis {
-	text-align:center;
-	width: 100%;
-	overflow-y: visible;
-}
+
 
 #formulaire {
     text-align:center;
@@ -35,10 +26,18 @@ padding-top: 20px;
 }
 
 
-.tableId {
- text-align:center;
+#avisId {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 22px;
 }
-
+#levelId {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
 
 .champs {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -79,15 +78,21 @@ padding-top: 20px;
 	color: #333333;
 }
 .titre {
+    margin-top: 10px;
+	margin-bottom:10px;
 	font-family: 'Merienda One', 'Lato', sans-serif;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: bold;
 	color: #0099FF;
 	line-height: normal;
+    text-align: center;
+
 }
 
 .soustitre {
+    margin-top: 20px;
+	margin-bottom:10px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	font-style: normal;
@@ -334,7 +339,7 @@ padding-top: 20px;
 .carousel-inner .item{
     text-align: center;
     position: centered;
-    height: 200px;
+    height: 350px;
 }
 
 .carousel-control.left{

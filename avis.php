@@ -69,42 +69,13 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
     }
  }
  
- // chargement du nombre d'avis et des ID
- $query_avis = "SELECT * FROM avis";
- $query_avis = $query_avis." WHERE valide = 'oui'";
- $totalavis = mysqli_query($DevWebPeinture_db,$query_avis);
- $row_totalavis = mysqli_fetch_assoc($totalavis);  
- $totalRows_avis = mysqli_num_rows($totalavis);
- $indice=0;
- $avisencours = 1;
- if ($totalRows_avis>0) 
-  {
-   do
-   {
-    $indice=$indice+1;
-    $tableID[$indice]=$row_totalavis['ID'];
-    if ((isset($_GET["numavis"])) and ($_GET["numavis"]==$row_totalavis['ID'])){$avisencours = $indice;};
-   } // fin du do
-   while ($row_totalavis = mysqli_fetch_assoc($totalavis));
-  } // fin du if
-
  
  // chargement de l'avis 
  $query_avis = "SELECT * FROM avis";
  $query_avis = $query_avis." WHERE valide = 'oui'";
- $query_avis = $query_avis." AND ID=".$tableID[$avisencours];
  $avisdb = mysqli_query($DevWebPeinture_db,$query_avis);
  $row_avis = mysqli_fetch_assoc($avisdb);
  
- function changerpage($sens,$ind,$avisactu)
- {
-     if ($sens=="avant") {$avisactu=$avisactu+1;}
-	 if ($avisactu>$ind){$avisactu=$ind;};
-     if ($sens=="apres") {$avisactu=$avisactu-1;}
-     if ($avisactu<1) {$avisactu=1;};
-     $retour=$avisactu;
-   return $retour;
- }
 
 ?>
 
@@ -182,83 +153,202 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 
     </section>
     <!-- InstanceBeginEditable name="EditRegion1" -->
-	<div id="fond">
-	  <div id="section_avis">
-	     <table border="0" class="tableId">
-	      <tr>
-  		    <td colspan="6" align="left" valign="middle" class="champsadit"><?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom'].":";}?></td>
-		  </tr>
-	      <tr>
-  		    <td colspan="6" align="left" valign="middle" class="champs"><?php echo '"'.$row_avis['commentaire'].'"';?></td>
-		  </tr>
-		  <tr>
-		    <td align="left" valign="middle" class="champs">Vitesse d'ex&eacute;cution</td>
-			<td align="left" rowspan="2" valign="middle"><img src="/star-on.svg" width="20" height="20" alt=""/></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['vitesse']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['vitesse']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['vitesse']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['vitesse']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-		  </tr>
-		  <tr>
-     	    <td align="left" valign="middle" class="champsaviscomment" >Ponctualit&eacute;, temps de travail</td>
-		  </tr>
-		  <tr>
-		    <td align="left" valign="middle" class="champs">Pr&eacute;paration</td>
-			<td align="left" rowspan="2" valign="middle"><img src="/star-on.svg" width="20" height="20" alt=""/></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['preparation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['preparation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['preparation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['preparation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-		  </tr>
-		  <tr>
-     	    <td align="left" valign="middle" class="champsaviscomment" >Protection des &eacute;l&eacute;ments, nettoyage</td>
-		  </tr>
-		  <tr>
-		    <td align="left" valign="middle" class="champs">Qualit&eacute; des travaux </td>
-			<td align="left" rowspan="2" valign="middle"><img src="/star-on.svg" width="20" height="20" alt=""/></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['qualite']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['qualite']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['qualite']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['qualite']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-		  </tr>
-		  <tr>
-     	    <td align="left" valign="middle" class="champsaviscomment" >Professionnalisme, serieux, qualit&eacute; d'ex&eacute;cution</td>
-		  </tr>
-		  <tr>
-		    <td align="left" valign="middle" class="champs">Recommandation</td>
-			<td align="left" rowspan="2" valign="middle"><img src="/star-on.svg" width="20" height="20" alt=""/></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['recommandation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['recommandation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['recommandation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['recommandation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-		  </tr>
-		  <tr>
-     	    <td align="left" valign="middle" class="champsaviscomment" >Nous recommanderiez vous ? </td>
-		  </tr>
-		  <tr>
-		    <td align="left" valign="middle" class="champs">Contact humain</td>
-			<td align="left" rowspan="2" valign="middle"><img src="/star-on.svg" width="20" height="20" alt=""/></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['contact']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['contact']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['contact']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-			<td align="left" rowspan="2" valign="middle"><?php if ($row_avis['contact']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?></td>
-		  </tr>
-		  <tr>
-     	    <td align="left" valign="middle" class="champsaviscomment" >Dialogue, &eacute;change d'id&eacute;es, communication</td>
-		  </tr>
-		  <tr>
-     	    <td colspan="6" align="left" height="40" valign="middle" class="champsaviscomment" ></td>
-		  </tr>
-		  <tr>
-     	    <td colspan="2" align="left" valign="middle" class="champsaviscomment" ><a href="<?php echo 'avis.php?numavis='.$tableID[changerpage("avant",$indice,$avisencours)];?>"><img src="previous.gif" width="14" height="13" border="0" /></a></td>
-     	    <td colspan="2" align="left" valign="middle" class="champsaviscomment" ></td>
-     	    <td colspan="2" align="right" valign="middle" class="champsaviscomment" ><a href="<?php echo 'avis.php?numavis='.$tableID[changerpage("apres",$indice,$avisencours)];?>"><img src="next.gif" width="14" height="13" border="0" /></a></td>
-		  </tr>
- 	    </table>
-	  </div>
-	  <div id="formulaire">
-<?php if ($afficheformulaire=="oui") { ?>
-	<form action="" method="post" enctype="" name="demande_avis">
+	<div id="avis-cat">
+        <p class="titre">Ce qu'ils disent de nous</p>
+      <div id="monCarousel" class="carousel slide" data-ride="carousel" style="width: 800px text-align:center">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+			 <p id="avisId"><?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom']." a dit:";}?></p>
+			 <p id="avisId"><?php echo '"'.$row_avis['commentaire'].'"';?></p>
+			 <p id="levelId">
+			 Vitesse d'éxécution &nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['vitesse']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+			 <p id="levelId">
+			 Préparation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['preparation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+   			  <p id="levelId">
+			  Qualité des travaux &nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['qualite']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+   			  <p id="levelId">
+			  Recommandation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['recommandation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+   			  <p id="levelId">
+			  Contact humain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['contact']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+           </div>
+	       <?php 
+		     $row_avis = mysqli_fetch_assoc($avisdb);
+             do
+              { 
+			?>
+            <div class="item">
+			 <p id="avisId"><?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom']." a dit:";}?></p>
+			 <p id="avisId"><?php echo '"'.$row_avis['commentaire'].'"';?></p>
+			 <p id="levelId">
+			 Vitesse d'éxécution &nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['vitesse']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+			 <p id="levelId">
+			 Préparation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['preparation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+   			  <p id="levelId">
+			  Qualité des travaux &nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['qualite']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+   			  <p id="levelId">
+			  Recommandation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['recommandation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+   			  <p id="levelId">
+			  Contact humain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['contact']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+			  </p>
+            </div>
+	        <?php } while ($row_avis = mysqli_fetch_assoc($avisdb));?>
+        </div>
+        <a href="#monCarousel" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" style="color: black"></span></a>
+        <a href="#monCarousel" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" style="color: black"></span></a>
+     </div>
+  </div>
+  <div id="formulaire">
+   <form action="" method="post" enctype="" name="demande_avis">
+   <p class="titre">Que pensez vous de nous ?</p>
+   <p class="soustitre">Votre identité</p>
+
+   <p id="avisId">
+     NOM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="nom" type="text" size="20" />
+   </p>
+    <p id="avisId">
+     Prénom:&nbsp;&nbsp;<input name="prenom" type="text" size="20" />
+   </p>
+    <p id="avisId">
+     Pseudo:&nbsp;&nbsp;<input name="pseudo" type="text" size="20" />
+   </p>
+   <p id="avisId">
+     Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email" type="text" size="20" />
+   </p>
+   <p class="soustitre">Votre avis</p>
+   <p id="avisId">Vitesse d'éxécution <span style="font-style: italic; font-size: 14px">(Ponctualité, temps de travail)</span>:</p>
+   <p class="starRating" align="left">
+		<input id="Vrating5" type="radio" name="Vrating" value="5">
+		<label for="Vrating5">5</label>
+		<input id="Vrating4" type="radio" name="Vrating" value="4">
+		<label for="Vrating4">4</label>
+		<input id="Vrating3" type="radio" name="Vrating" value="3">
+		<label for="Vrating3">3</label>
+		<input id="Vrating2" type="radio" name="Vrating" value="2">
+		<label for="Vrating2">2</label>
+		<input id="Vrating1" type="radio" name="Vrating" value="1" checked="checked">
+		<label for="Vrating1">1</label>		
+   </p>
+   <p id="avisId">Préparation <span style="font-style: italic; font-size: 14px">(Protection des éléments, nettoyage)</span>:</p>
+   <p class="starRating" align="left">
+	<input id="Prating5" type="radio" name="Prating" value="5">
+	<label for="Prating5">5</label>
+	<input id="Prating4" type="radio" name="Prating" value="4">
+	<label for="Prating4">4</label>
+	<input id="Prating3" type="radio" name="Prating" value="3">
+	<label for="Prating3">3</label>
+	<input id="Prating2" type="radio" name="Prating" value="2">
+	<label for="Prating2">2</label>
+	<input id="Prating1" type="radio" name="Prating" value="1" checked="checked">
+	<label for="Prating1">1</label>			
+   </p>
+   <p id="avisId">Qualité des travaux <span style="font-style: italic; font-size: 14px">(Professionnalisme, serieux, qualité d'éxécution)</span>:</p>
+   <p class="starRating" align="left">
+	<input id="Qrating5" type="radio" name="Qrating" value="5">
+	<label for="Qrating5">5</label>
+	<input id="Qrating4" type="radio" name="Qrating" value="4">
+	<label for="Qrating4">4</label>
+	<input id="Qrating3" type="radio" name="Qrating" value="3">
+	<label for="Qrating3">3</label>
+	<input id="Qrating2" type="radio" name="Qrating" value="2">
+	<label for="Qrating2">2</label>
+	<input id="Qrating1" type="radio" name="Qrating" value="1" checked="checked">
+	<label for="Qrating1">1</label>			
+   </p>
+   <p id="avisId">Recommandation <span style="font-style: italic; font-size: 14px">(Nous recommanderiez-vous ?)</span>:</p>
+   <p class="starRating" align="left">
+	<input id="Rrating5" type="radio" name="Rrating" value="5">
+	<label for="Rrating5">5</label>
+	<input id="Rrating4" type="radio" name="Rrating" value="4">
+	<label for="Rrating4">4</label>
+	<input id="Rrating3" type="radio" name="Rrating" value="3">
+	<label for="Rrating3">3</label>
+	<input id="Rrating2" type="radio" name="Rrating" value="2">
+	<label for="Rrating2">2</label>
+	<input id="Rrating1" type="radio" name="Rrating" value="1" checked="checked">
+	<label for="Rrating1">1</label>			
+   </p>
+   <p id="avisId">Contact humain <span style="font-style: italic; font-size: 14px">(Dialogue, échange d'idées, communication)</span>:</p>
+   <p class="starRating" align="left">
+	<input id="Crating5" type="radio" name="Crating" value="5">
+	<label for="Crating5">5</label>
+	<input id="Crating4" type="radio" name="Crating" value="4">
+	<label for="Crating4">4</label>
+	<input id="Crating3" type="radio" name="Crating" value="3">
+	<label for="Crating3">3</label>
+	<input id="Crating2" type="radio" name="Crating" value="2">
+	<label for="Crating2">2</label>
+	<input id="Crating1" type="radio" name="Crating" value="1" checked="checked">
+	<label for="Crating1">1</label>			
+   </p>
+   <p class="soustitre">Votre commentaire:</p>
+   <p id="avisId"><textarea name="commentaire" cols="30" rows="10" ></textarea></p>
+   
+   </form>
+  </div>
+ <!--	<div id="formulaire">
+<?php /*?><?php if ($afficheformulaire=="oui") { ?>
+<?php */?>	<form action="" method="post" enctype="" name="demande_avis">
     	<table border="0" class="tableId">
 		  <tr>
 			<td colspan="2" align="middle" height="80" valign="middle" class="titre">Que pensez vous de nous ? </td>
@@ -268,7 +358,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 		  </tr>
 		  
 		  <tr>
-			<td colspan="2" align="left" valign="middle"><?php echo $message; ?></td>
+			<td colspan="2" align="left" valign="middle"><?php /*?><?php echo $message; ?><?php */?></td>
 		  </tr>
 		  <tr>
 			<td align="left" width="40%" valign="middle" class="champs">NOM:</td>
@@ -402,13 +492,12 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
  	  </table>
   </form>
   
-  <?php
+<?php /*?>  <?php
     } // fin du if
 	else {echo $message;}
   ?>	
-   </div>
-  </div>
-    <!-- InstanceEndEditable -->
+<?php */?>   </div>
+-->    <!-- InstanceEndEditable -->
 	    <section id="footer">
         <div id="pied">
         </div>
