@@ -91,10 +91,10 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="style1.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="css/style-rea.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/style1.css">
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/css/style-rea.css"> <!-- Resource style -->
 
 
 </head>
@@ -103,7 +103,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
     <section id="entete">
 
         <div class=" logo-bandeau">
-            <a href="index.html"><img src="images/logo%20groupe.png" width="500"></a>
+            <a href="/index.html"><img src="/images/logo%20groupe.png" width="500"></a>
         </div>
 
         <nav class="navbar">
@@ -112,39 +112,39 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
             </span>
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a id="btn1" href="savoir-etre.html">
-                        <div id="btn1-in"><img id="mouseleave" src="images/btn/savoir-faire.png" width="171px" height="64"> </div>
-                        <div id="btn1-out"><img id="mouseenter" src="images/btn/sf-survol.png"  width="171px" height="64"></div>
+                    <a id="btn1" href="/savoir-etre.html">
+                        <div id="btn1-in"><img id="mouseleave" src="/images/btn/savoir-faire.png" width="171px" height="64"> </div>
+                        <div id="btn1-out"><img id="mouseenter" src="/images/btn/sf-survol.png"  width="171px" height="64"></div>
                     </a>
                 </li>
                 <li>
-                    <a id="btn2" href="index.html">
-                        <div id="btn2-in"><img id="mouseleave" src="images/btn/accueil-btn.png"  width="171px" height="64"> </div>
-                        <div id="btn2-out"><img id="mouseenter" src="images/btn/accueil-survol.png"  width="171px" height="64"></div>
+                    <a id="btn2" href="/index.html">
+                        <div id="btn2-in"><img id="mouseleave" src="/images/btn/accueil-btn.png"  width="171px" height="64"> </div>
+                        <div id="btn2-out"><img id="mouseenter" src="/images/btn/accueil-survol.png"  width="171px" height="64"></div>
                     </a>
                 </li>
                 <li>
-                    <a id="btn3" href="rea.html">
-                        <div id="btn3-in"><img id="mouseleave" src="images/btn/rea.png"  width="171px" height="64"> </div>
-                        <div id="btn3-out"><img id="mouseenter" src="images/btn/rea-survol.png"  width="171px" height="64"></div>
+                    <a id="btn3" href="/rea.html">
+                        <div id="btn3-in"><img id="mouseleave" src="/images/btn/rea.png"  width="171px" height="64"> </div>
+                        <div id="btn3-out"><img id="mouseenter" src="/images/btn/rea-survol.png"  width="171px" height="64"></div>
                     </a>
                 </li>
                 <li>
-                    <a id="btn4" href="avis.php">
-                        <div id="btn4-in"><img id="mouseleave" src="images/btn/avis.png" width="171px" height="64"> </div>
-                        <div id="btn4-out"><img id="mouseenter" src="images/btn/avis-survol.png"  width="171px" height="64"></div>
+                    <a id="btn4" href="/avis.php">
+                        <div id="btn4-in"><img id="mouseleave" src="/images/btn/avis.png" width="171px" height="64"> </div>
+                        <div id="btn4-out"><img id="mouseenter" src="/images/btn/avis-survol.png"  width="171px" height="64"></div>
                     </a>
                 </li>
                 <li>
-                    <a id="btn5" href="contact.html">
-                        <div id="btn5-in"><img id="mouseleave" src="images/btn/contact.png"  width="171px" height="64"> </div>
-                        <div id="btn5-out"><img id="mouseenter" src="images/btn/contact-survol.png"  width="171px" height="64"></div>
+                    <a id="btn5" href="/contact.html">
+                        <div id="btn5-in"><img id="mouseleave" src="/images/btn/contact.png"  width="171px" height="64"> </div>
+                        <div id="btn5-out"><img id="mouseenter" src="/images/btn/contact-survol.png"  width="171px" height="64"></div>
                     </a>
                 </li>
                 <li>
-                    <a id="btn6" href="devis.php">
-                        <div id="btn6-in"><img id="mouseleave" src="images/btn/devis.png"  width="171px" height="64"> </div>
-                        <div id="btn6-out"><img id="mouseenter" src="images/btn/devis-survol.png" width="171px" height="64"></div>
+                    <a id="btn6" href="/devis.php">
+                        <div id="btn6-in"><img id="mouseleave" src="/images/btn/devis.png"  width="171px" height="64"> </div>
+                        <div id="btn6-out"><img id="mouseenter" src="/images/btn/devis-survol.png" width="171px" height="64"></div>
                     </a>
 
                 </li>
@@ -162,43 +162,43 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 			 <p id="avisId"><?php echo '"'.$row_avis['commentaire'].'"';?></p>
 			 <p id="levelId">
 			 Vitesse d'éxécution &nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['vitesse']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['vitesse']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['vitesse']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['vitesse']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['vitesse']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
 			 <p id="levelId">
 			 Préparation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['preparation']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['preparation']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['preparation']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['preparation']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['preparation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
    			  <p id="levelId">
 			  Qualité des travaux &nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['qualite']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['qualite']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['qualite']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['qualite']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['qualite']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
    			  <p id="levelId">
 			  Recommandation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['recommandation']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['recommandation']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['recommandation']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['recommandation']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['recommandation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
    			  <p id="levelId">
 			  Contact humain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['contact']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['contact']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['contact']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['contact']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['contact']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
            </div>
 	       <?php 
@@ -211,43 +211,43 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 			 <p id="avisId"><?php echo '"'.$row_avis['commentaire'].'"';?></p>
 			 <p id="levelId">
 			 Vitesse d'éxécution &nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['vitesse']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['vitesse']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['vitesse']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['vitesse']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['vitesse']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['vitesse']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
 			 <p id="levelId">
 			 Préparation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['preparation']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['preparation']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['preparation']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['preparation']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['preparation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['preparation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
    			  <p id="levelId">
 			  Qualité des travaux &nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['qualite']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['qualite']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['qualite']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['qualite']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['qualite']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['qualite']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
    			  <p id="levelId">
 			  Recommandation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['recommandation']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['recommandation']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['recommandation']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['recommandation']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['recommandation']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['recommandation']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
    			  <p id="levelId">
 			  Contact humain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				  <img src="star-on.svg" width="20" height="20" alt=""/>
-				   <?php if ($row_avis['contact']>=2) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['contact']>=3) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['contact']>=4) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
-				   <?php if ($row_avis['contact']>=5) { ?><img src="star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				  <img src="/star-on.svg" width="20" height="20" alt=""/>
+				   <?php if ($row_avis['contact']>=2) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=3) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=4) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
+				   <?php if ($row_avis['contact']>=5) { ?><img src="/star-on.svg" width="20" height="20" alt=""/> <?php }?>
 			  </p>
             </div>
 	        <?php } while ($row_avis = mysqli_fetch_assoc($avisdb));?>
