@@ -9,6 +9,9 @@ $(document).ready(function () {
     $('#btn5-out').hide();
     $('#btn6-out').hide();
   //  $('#overlay').hide();
+     $('#jmp').hide();
+    $('#arc-en-ciel').hide();
+    
     
     
     $('#bienvenue').hide();
@@ -116,6 +119,9 @@ $(document).ready(function () {
     });
 
  $('[data-toggle="tooltip"]').tooltip();
+    
+    $('#arc-en-ciel').show(300);
+    $('#jmp').show(300);
     
 
 });
