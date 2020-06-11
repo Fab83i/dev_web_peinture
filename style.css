@@ -167,6 +167,7 @@ h3 {
     width: 50px;
     height: 50px;
     padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .active {
@@ -186,6 +187,8 @@ h3 {
     
     .logo-bandeau {
         text-align: center;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
 }
     
     .logo-bandeau img{

@@ -120,8 +120,8 @@ $(document).ready(function () {
 
  $('[data-toggle="tooltip"]').tooltip();
     
-    $('#arc-en-ciel').show(300);
-    $('#jmp').show(300);
+    $('#arc-en-ciel').show(500);
+    $('#jmp').show(500);
     
 
 });
