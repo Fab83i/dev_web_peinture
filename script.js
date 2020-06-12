@@ -124,4 +124,7 @@ $(document).ready(function () {
     $('#jmp').show(500);
     
 
+    
+    const footerYear = document.querySelector('#footer-year');
+    footerYear.innerHTML = new Date().getFullYear;
 });
