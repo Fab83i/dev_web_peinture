@@ -122,9 +122,4 @@ $(document).ready(function () {
     
     $('#arc-en-ciel').show(500);
     $('#jmp').show(500);
-    
-
-    
-    const footerYear = document.querySelector('#footer-year');
-    footerYear.innerHTML = new Date().getFullYear;
 });

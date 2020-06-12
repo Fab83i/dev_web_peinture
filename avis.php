@@ -503,7 +503,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
         </div>
     </section>
     
-    <p style="text-align: center;">� 2020 JMP & CouleurArcEnCiel - Tous droits r�serv�s</p>
+    <p style="text-align: center;">2020 JMP/CouleurArcEnCiel - Tous droits réservés</p>
 
     </body>
 <!-- InstanceEnd --></html>
