@@ -109,6 +109,16 @@ h3 {
 	color: #0099FF;
 	line-height: normal;
 }
+.messErreur {
+    margin-top: 20px;
+	margin-bottom:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #db0616;
+	line-height: normal;
+}
 
 
 /* ENTETE*/
