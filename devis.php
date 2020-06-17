@@ -56,6 +56,29 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
     $message="Il y a une erreur dans votre adresse email ";
     $ok="non";
    } 
+  if (strlen($_POST['cp'])<5)
+   {
+    $message="Merci de renseigner correctement le code postal pour situer les travaux à effectuer.";
+    $ok="non";  
+   }
+  if (strlen($_POST['cp'])>5)
+   {
+    $message="Merci de renseigner correctement le code postal pour situer les travaux à effectuer.";
+    $ok="non";  
+   } 
+    
+  preg_match("[0-9]",$_POST['cp'],$result); 
+  if (!empty($result))
+   {
+    $message="Merci de renseigner correctement le code postal pour situer les travaux à effectuer.";
+    $ok="non";  
+   }
+  if ($_POST['besoin']=="")
+   {
+    $message="Veuillez décrire, en quelques lignes,  les travaux à faire.";
+    $ok="non";  
+   }
+     
   if ($ok=="oui")
    {
        $besoin=addslashes($_POST['besoin']);
@@ -70,7 +93,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
                            GetSQLValueString($_POST['cp'], "text"), 
 						   GetSQLValueString($besoin, "text"));
 	   $Result1 = mysqli_query($DevWebPeinture_db,$insertSQL);
-	   $dest="calvo.eric@orange.fr";
+	   $dest="ec83fr@yahoo.fr,titiplongeur83@yahoo.fr,laurentdeco83@yahoo.fr";
        $from=$_POST['email'];
        $objet="Demande de devis de ".$_POST['prenom']. " ".$_POST['nom'];
        $texte="Vous avez reçu une nouvelle demande de devis.\n";
@@ -96,7 +119,6 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <title> JMP / Couleur arc-en-ciel</title>
     <meta charset="UTF-8" />
@@ -182,21 +204,22 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
                     NOM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="nom" type="text" size="20" value="<?php if (isset($_POST['nom'])){echo $_POST['nom'];} ?>" />
                 </p>
                 <p id="avisId">
-                    Prénom:&nbsp;&nbsp;&nbsp;&nbsp;<input name="prenom" type="text" size="20" value="<?php if (isset($_POST['prenom'])){echo $_POST['prenom'];} ?>" />
-                    <p id="avisId">
-                        Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email" type="text" size="20" value="<?php if (isset($_POST['email'])){echo $_POST['email'];} ?>" />
-                    </p>
-                    <p id="avisId">
-                        Téléphone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="tel" type="text" size="15" value="<?php if (isset($_POST['tel'])){echo $_POST['tel'];} ?>" />
-                        <p id="avisId">
-                            Code Postal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="cp" type="text" size="15" />
-                            <p class="soustitre">Votre besoin</p>
-                            <p id="avisId"><textarea name="besoin" cols="30" rows="10" value="<?php if (isset($_POST['besoin'])){echo $_POST['besoin'];} ?>"></textarea></p>
-                            <p id="avisId">
-                                <input name="Envoyer" type="submit" id="Envoyer" value="Envoyer" />
-                                <p class="information"><input name="ID" type="hidden" id="ID" />&nbsp;</p>
-                                <p class="information">Les informations demandées dans ce formulaire servent à traiter votre demande et à vous recontacter. Elles ne sont et ne seront en aucun cas cédées à des tiers pour quelque raison que ce soit.
-                                </p>
+                    Prénom:&nbsp;&nbsp;&nbsp;&nbsp;<input name="prenom" type="text" size="20" value="<?php if (isset($_POST['prenom'])){echo $_POST['prenom'];} ?>" /> </p>
+                <p id="avisId">
+                    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email" type="text" size="20" value="<?php if (isset($_POST['email'])){echo $_POST['email'];} ?>" />
+                </p>
+                <p id="avisId">
+                    Téléphone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="tel" type="text" size="15" value="<?php if (isset($_POST['tel'])){echo $_POST['tel'];} ?>" />
+                </p>
+                <p id="avisId">
+                    Code Postal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="cp" type="text" size="15" value="<?php if (isset($_POST['cp'])){echo $_POST['cp'];} ?>" /></p>
+                <p class="soustitre">Votre besoin</p>
+                <p id="avisId"><textarea name="besoin" cols="30" rows="10"><?php if (isset($_POST['besoin'])){echo $_POST['besoin'];} ?></textarea></p>
+                <p id="avisId">
+                    <input name="Envoyer" type="submit" id="Envoyer" value="Envoyer" /></p>
+                <p class="information"><input name="ID" type="hidden" id="ID" />&nbsp;</p>
+                <p class="information">Les informations demandées dans ce formulaire servent à traiter votre demande et à vous recontacter. Elles ne sont et ne seront en aucun cas cédées à des tiers pour quelque raison que ce soit.
+                </p>
             </form>
             <?php } else { ?>
             <p class="messErreur"><?php echo $message; ?></p>
