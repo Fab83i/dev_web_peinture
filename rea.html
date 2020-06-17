@@ -124,10 +124,10 @@
                 <tr>
                     <td><img src="images/bande.jpg" alt="bandes" onMouseOver="change('images/bande.jpg')"></td>
                     <td><img src="images/salon.jpg" alt="marron" onMouseOver="change('images/salon.jpg')"></td>
-                    <td><img src="images/tadlac.jpg" alt="orange" onMouseOver="change('images/tadlac.jpg')"></td>
+                    <td><img src="images/unknow.jpg" alt="orange" onMouseOver="change('images/tadlac.jpg')"></td>
                 </tr>
                 <tr>
-                    <td><img src="images/tadlac-progress.jpg" alt="orange" onMouseOver="change('images/tadlac-progress.jpg')"></td>
+                    <td><img src="images/unknow.jpg" alt="orange" onMouseOver="change('images/tadlac-progress.jpg')"></td>
                     <td><img src="images/unknow.jpg" alt="orange"></td>
                     <td><img src="images/unknow.jpg" alt="orange"></td>
                 </tr>
@@ -258,6 +258,67 @@
             </div>
         </div>
         <!-- FIN MOSAIQUE -->
+        
+        <!-- DECORATION-->
+        <!--TITRE DECORATION -->
+        <div id="decoration">
+            <h1 style="font-family: 'Merienda One', sans-serif;">De la décoration...</h1>
+        </div>
+        <!--FIN TITRE FACADE -->
+
+        <!--SLIDER FACADE -->
+        <figure class="cd-image-container">
+            <img src="images/porte-modifie.jpg" alt="modified Image">
+            <span class="cd-image-label" data-type="modified">Après</span>
+            <div class="cd-resize-img">
+                <!-- the resizable image on top -->
+                <img src="images/porte-origin.jpg" alt="Original Image">
+                <span class="cd-image-label" data-type="original">Avant</span>
+            </div>
+            <span class="cd-handle"></span>
+        </figure> <!-- cd-image-container -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+        <script src="js/main.js"></script> <!-- Resource jQuery -->
+        <!--FIN LSIDER FACADE -->
+        
+        <!--EXPLICATION -->
+        <div id="texte-explication">
+            <p> La décoration fait également partie de notre savoir-faire. <br> Porte, placard ou même peinture stylisée, tout pour vous faire bénéficier d'une décoration de rêve.</p>
+        </div>
+        <!--FIN EXPLICATION -->
+        
+        <!--MOSAIQUE -->
+        <div id="mosaique">
+            <script type="text/javascript">
+                function changeDeco(imageaaffiche) {
+                    document.getElementById('deco').src = imageaaffiche;
+                }
+            </script>
+            <table id="mosa">
+                <tr>
+                    <td><img src="images/tadlac_r.jpg" alt="orange" onMouseOver="changeDeco('images/tadlac.jpg')"></td>
+                    <td><img src="images/tadlac-progress_r.jpg" alt="violet" onMouseOver="changeDeco('images/tadlac-progress.jpg')"></td>
+                    <td><img src="images/101111_r.jpg" alt="fenetre" onMouseOver="changeDeco('images/101111.jpg')"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/101543_r.jpg" alt="bandes" onMouseOver="changeDeco('images/101543.jpg')"></td>
+                    <td><img src="images/104031_r.jpg" alt="marron" onMouseOver="changeDeco('images/104031.jpg')"></td>
+                    <td><img src="images/145221_r.jpg" alt="orange" onMouseOver="changeDeco('images/145221.jpg')"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/164543_r.jpg" alt="orange" onMouseOver="changeDeco('images/164543.jpg')"></td>
+                    <td><img src="images/180359_r.jpg" alt="orange" onMouseOver="changeDeco('images/180359.jpg')"></td>
+                    <td><img src="images/unknow.jpg" alt="orange"></td>
+                </tr>
+            </table>
+            <div id="affichage">
+                <img id='deco' src="images/tadlac-progress.jpg">
+            </div>
+        </div>
+        <!-- FIN MOSAIQUE -->
+        
+        
 
     </section>
 
