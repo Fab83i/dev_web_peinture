@@ -212,7 +212,7 @@ Main components
     
 }
 #texte-explication p{
-    position: centered;
+    text-align: justify;
     padding: 20px;
     font-size: 25px;
 }

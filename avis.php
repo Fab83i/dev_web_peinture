@@ -120,6 +120,8 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
     <title> JMP / Couleur arc-en-ciel</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="peinture, décoration, rénovation, peinture var, décoration var, peinture 83, peinturedeco83, savoir-faire, société de peinture, site internet peinture, intérieure, extérieure, 83, var, picard, Laurent, Jean Marie, jean, Marie">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
