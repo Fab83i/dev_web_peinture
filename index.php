@@ -171,7 +171,7 @@ if (!function_exists("GetSQLValueString"))
                     <p>"<?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom']." a dit:";}?></p>
                     <p><?php echo '"'.utf8_encode($row_avis['commentaire']).'"';?></p>
                 </div>
-            <?php 
+                <?php 
 		     $row_avis = mysqli_fetch_assoc($avisdb);
              do
               { 
@@ -180,13 +180,43 @@ if (!function_exists("GetSQLValueString"))
                     <p>"<?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom']." a dit:";}?></p>
                     <p><?php echo '"'.utf8_encode($row_avis['commentaire']).'"';?></p>
                 </div>
-            <?php } while ($row_avis = mysqli_fetch_assoc($avisdb));?>
-           </div>
+                <?php } while ($row_avis = mysqli_fetch_assoc($avisdb));?>
+            </div>
             <a href="#monCarousel" class="left carousel-control" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" style="color: black"></span></a>
             <a href="#monCarousel" class="right carousel-control" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" style="color: black"></span></a>
         </div>
+
+
+
+    </div>
+
+    <style>
+        /* DYSFONCTIONNEMENT DE CE STYLE DANS style.css */
+
+        /* MISE EN STYLE DU BADGE NOTE MOYENNE */
+
+        #emplacement_badge {
+            margin: -130px auto 20px auto;
+            width: 250px;
+            height: 239px;
+            background-image: url(images/badge.png);
+            background-size: cover;
+            text-align: center;
+        }
+
+        #emplacement_badge p {
+            padding-top: 30%;
+            color: white;
+            font-size: 60px;
+        }
+
+    </style>
+
+
+    <div id="emplacement_badge">
+        <p>4,8</p>
     </div>
 
     <!--FIN AVIS CLIENTS-->
@@ -211,6 +241,7 @@ if (!function_exists("GetSQLValueString"))
         <div id="pied">
         </div>
     </section>
+
 
     <p style="text-align: center;">
         2020 JMP/CouleurArcEnCiel - Tous droits réservés
