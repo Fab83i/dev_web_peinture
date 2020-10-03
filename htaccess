@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTP_HOST} !^www. [NC]
+RewriteRule (.*) https://www.peinturedeco83.fr/$1 [R=301,L]

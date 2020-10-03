@@ -39,6 +39,19 @@ if (!function_exists("GetSQLValueString"))
  $query_avis = $query_avis." WHERE valide = 'oui'";
  $avisdb = mysqli_query($DevWebPeinture_db,$query_avis);
  $row_avis = mysqli_fetch_assoc($avisdb);
+
+ // chargement de la note moyenne
+
+$query_avg = "SELECT AVG(`vitesse`), AVG(`preparation`), AVG(`qualite`), AVG(`recommandation`), AVG(`contact`) FROM avis";
+$avg_db = mysqli_query($DevWebPeinture_db,$query_avg);
+$row_avg = mysqli_fetch_assoc($avg_db);
+
+$somme = 0;
+foreach($row_avg as $key => $value){
+    $somme+= $value;
+}
+$moyenne = round($somme/5,1);
+
 ?>
 
 <html>
@@ -57,6 +70,7 @@ if (!function_exists("GetSQLValueString"))
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo%20groupe.png" />
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -198,7 +212,7 @@ if (!function_exists("GetSQLValueString"))
         /* MISE EN STYLE DU BADGE NOTE MOYENNE */
 
         #emplacement_badge {
-            margin: -130px auto 20px auto;
+            margin: 0px auto 30px auto;
             width: 250px;
             height: 239px;
             background-image: url(images/badge.png);
@@ -207,16 +221,16 @@ if (!function_exists("GetSQLValueString"))
         }
 
         #emplacement_badge p {
-            padding-top: 30%;
+            padding-top: 33%;
             color: white;
-            font-size: 60px;
+            font-size: 50px;
         }
 
     </style>
 
 
     <div id="emplacement_badge">
-        <p>4,8</p>
+        <p><?php echo $moyenne; ?>/5</p>
     </div>
 
     <!--FIN AVIS CLIENTS-->
