@@ -47,7 +47,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     #fiche-contact {
         text-align: center;

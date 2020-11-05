@@ -301,17 +301,13 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
             <p class="titre">Que pensez vous de nous ?</p>
             <p class="soustitre">Votre identité</p>
 
-            <p id="avisId">
-                NOM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="nom" type="text" size="20" value="<?php if (isset($_POST['nom'])){echo $_POST['nom'];} ?>" />
+            <p id="avisId"><input name="nom" placeholder="Nom" type="text" size="25" value="<?php if (isset($_POST['nom'])){echo $_POST['nom'];} ?>" />
             </p>
-            <p id="avisId">
-                Prénom:&nbsp;&nbsp;<input name="prenom" type="text" size="20" value="<?php if (isset($_POST['prenom'])){echo $_POST['prenom'];} ?>" />
+            <p id="avisId"><input name="prenom" placeholder="Prénom" type="text" size="25" value="<?php if (isset($_POST['prenom'])){echo $_POST['prenom'];} ?>" />
             </p>
-            <p id="avisId">
-                Pseudo:&nbsp;&nbsp;<input name="pseudo" type="text" size="20" value="<?php if (isset($_POST['pseudo'])){echo $_POST['pseudo'];} ?>" />
+            <p id="avisId"><input name="pseudo" placeholder="Pseudo" type="text" size="25" value="<?php if (isset($_POST['pseudo'])){echo $_POST['pseudo'];} ?>" />
             </p>
-            <p id="avisId">
-                Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email" type="text" size="20" value="<?php if (isset($_POST['email'])){echo $_POST['email'];} ?>" />
+            <p id="avisId"><input name="email" placeholder="Email" type="text" size="25" value="<?php if (isset($_POST['email'])){echo $_POST['email'];} ?>" />
             </p>
             <p class="soustitre">Votre avis</p>
             <p id="avisId">Vitesse d'éxécution <span style="font-style: italic; font-size: 14px">(Ponctualité, temps de travail)</span>:</p>
@@ -404,9 +400,9 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
                 <?php } else {echo ">";};?>
                 <label for="Crating1">1</label>
             </p>
-            <p class="soustitre">Votre commentaire:</p>
-            <p id="avisId"><textarea name="commentaire" cols="30" rows="10"><?php if (isset($_POST['commentaire'])){echo $_POST['commentaire'];} ?></textarea></p>
-            <p id="avisId"><input name="Envoyer" type="submit" id="Envoyer" value="Envoyer" /></p>
+<!--            <p class="soustitre">Votre commentaire:</p>-->
+            <p id="avisId"><textarea name="commentaire" placeholder="Votre commentaire ..." cols="30" rows="8"><?php if (isset($_POST['commentaire'])){echo $_POST['commentaire'];} ?></textarea></p>
+            <p id="avisId"><input class="btn btn-primary btn-lg" name="Envoyer" type="submit" id="Envoyer" value="Envoyer" /></p>
             <p class="information"><input name="ID" type="hidden" id="ID" />&nbsp;</p>
         </form>
         <?php } else { ?>

@@ -20,9 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a6b4d1-32e3-4a20-8eda-2283bff9fc97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevWebPeinture_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/DevWebPeinture_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avis.php" beforeDir="false" afterPath="$PROJECT_DIR$/avis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devis.php" beforeDir="false" afterPath="$PROJECT_DIR$/devis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devis1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deviserc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style-contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/style-contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +62,11 @@
       <updated>1601620291895</updated>
       <workItem from="1601620296279" duration="17000" />
       <workItem from="1601740216410" duration="8705000" />
+      <workItem from="1602018482624" duration="7423000" />
+      <workItem from="1602346505588" duration="2901000" />
+      <workItem from="1602745546048" duration="157000" />
+      <workItem from="1603350514703" duration="416000" />
+      <workItem from="1604569132967" duration="95000" />
     </task>
     <servers />
   </component>
@@ -73,5 +83,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="190" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602346583886">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="458" y="190" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.831/203.-1027.1680.1027@0.23.1440.831" timestamp="1602346583886" />
   </component>
 </project>

@@ -57,13 +57,13 @@ $moyenne = round($somme/5,1);
 <html>
 
 <head>
-    <title> JMP / Couleur arc-en-ciel</title>
+    <title> Peinture deco 83</title>
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale-1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Bienvenue chez JMP&Couleur-arc-en-ciel. Décoration, rénovation, peinture intérieure ou extérieure, nous ferons de notre mieux pour satisfaire toutes vos envies et faire de votre chez vous quelque chose qui vous tient à coeur.">
-    <meta name="revised" content="21/06/2020" `>
+    <meta name="revised" content="08/10/2020" `>
     <meta name="keywords" content="peinture, décoration, rénovation, peinture var, décoration var, peinture 83, peinturedeco83, savoir-faire, société de peinture, site internet peinture, intérieure, extérieure, 83, var, picard, Laurent, Jean Marie, jean, Marie">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -182,7 +182,15 @@ $moyenne = round($somme/5,1);
         <div id="monCarousel" class="carousel slide" data-ride="carousel" style="width: 800px text-align:center">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <p>"<?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom']." a dit:";}?></p>
+                    <p><?php
+                        if ($row_avis['pseudo']<>"") {
+                            echo '"'.$row_avis['pseudo'].'" a dit:';
+                        }
+                        else {
+                            echo $row_avis['nom'].' a dit:';
+                        }
+                        ?>
+                    </p>
                     <p><?php echo '"'.utf8_encode($row_avis['commentaire']).'"';?></p>
                 </div>
                 <?php 
@@ -191,7 +199,14 @@ $moyenne = round($somme/5,1);
               { 
 			?>
                 <div class="item">
-                    <p>"<?php if ($row_avis['pseudo']<>"") {echo '"'.$row_avis['pseudo'].'" a dit:';} else {echo $row_avis['nom']." a dit:";}?></p>
+                    <p><?php
+                        if ($row_avis['pseudo']<>"") {
+                            echo '"'.$row_avis['pseudo'].'" a dit:';
+                        }
+                        else {
+                            echo $row_avis['nom']." a dit:";
+                        }?>
+                    </p>
                     <p><?php echo '"'.utf8_encode($row_avis['commentaire']).'"';?></p>
                 </div>
                 <?php } while ($row_avis = mysqli_fetch_assoc($avisdb));?>

@@ -199,26 +199,25 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
             <form action="" method="post" enctype="" name="demande_devis">
                 <p class="titre">Veuillez remplir le formulaire ci dessous :</p>
                 <p id="avisId">
-                    Civilité:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="civilite" type="radio" id="civilite" value="Monsieur" checked="checked" />&nbsp;Monsieur&nbsp;
+                    <input name="civilite" type="radio" id="civilite" value="Monsieur" checked="checked" />&nbsp;Monsieur&nbsp;
                     <input name="civilite" type="radio" id="civilite" value="Madame" />&nbsp;Madame&nbsp;
                 </p>
                 <p id="avisId">
-                    NOM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="nom" type="text" size="20" value="<?php if (isset($_POST['nom'])){echo $_POST['nom'];} ?>" />
+                    <input name="nom" placeholder="Nom" type="text" size="25" value="<?php if (isset($_POST['nom'])){echo $_POST['nom'];} ?>" />
                 </p>
                 <p id="avisId">
-                    Prénom:&nbsp;&nbsp;&nbsp;&nbsp;<input name="prenom" type="text" size="20" value="<?php if (isset($_POST['prenom'])){echo $_POST['prenom'];} ?>" /> </p>
+                    <input name="prenom" placeholder="Prénom" type="text" size="25" value="<?php if (isset($_POST['prenom'])){echo $_POST['prenom'];} ?>" /> </p>
                 <p id="avisId">
-                    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email" type="text" size="20" value="<?php if (isset($_POST['email'])){echo $_POST['email'];} ?>" />
+                    <input name="email" type="text" placeholder="Email" size="25" value="<?php if (isset($_POST['email'])){echo $_POST['email'];} ?>" />
                 </p>
                 <p id="avisId">
-                    Téléphone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="tel" type="text" size="15" value="<?php if (isset($_POST['tel'])){echo $_POST['tel'];} ?>" />
+                    <input name="tel" type="text" placeholder="Téléphone" size="25" value="<?php if (isset($_POST['tel'])){echo $_POST['tel'];} ?>" />
                 </p>
                 <p id="avisId">
-                    Code Postal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="cp" type="text" size="15" value="<?php if (isset($_POST['cp'])){echo $_POST['cp'];} ?>" /></p>
-                <p class="soustitre">Votre besoin</p>
-                <p id="avisId"><textarea name="besoin" cols="30" rows="10"><?php if (isset($_POST['besoin'])){echo $_POST['besoin'];} ?></textarea></p>
+                    <input name="cp" placeholder="Code Postal" type="text" size="25" value="<?php if (isset($_POST['cp'])){echo $_POST['cp'];} ?>" /></p>
+                <p id="avisId"><textarea name="besoin" placeholder="Détails de votre besoin" cols="30" rows="5"><?php if (isset($_POST['besoin'])){echo $_POST['besoin'];} ?></textarea></p>
                 <p id="avisId">
-                    <input name="Envoyer" type="submit" id="Envoyer" value="Envoyer" /></p>
+                    <input class="btn btn-primary btn-lg" name="Envoyer" type="submit" id="Envoyer" value="Envoyer" /></p>
                 <p class="information"><input name="ID" type="hidden" id="ID" />&nbsp;</p>
                 <p class="information">Les informations demandées dans ce formulaire servent à traiter votre demande et à vous recontacter. Elles ne sont et ne seront en aucun cas cédées à des tiers pour quelque raison que ce soit.
                 </p>
@@ -226,69 +225,6 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
             <?php } else { ?>
             <p class="messErreur"><?php echo $message; ?></p>
             <?php } ?>
-            <!--        
-
-	<form action="" method="post" enctype="" name="demande_devis">
-		<table width="90%" border="0" align="center">
-		  <tr>
-			<td colspan="2" align="left" height="30" valign="middle"></td>
-		  </tr>
-		  <tr>
-			<td colspan="2" align="left" height="50" valign="middle" class="titre">Pour une demande de devis, veuillez remplir le formulaire ci dessous : </td>
-		  </tr>
-		  
-		  <tr>
-			<td width="19%" height="30" align="right" valign="middle" class="champs" >Civilit&eacute;<span style="color: #FF0000">*</span>:&nbsp;</td>
-			<td width="81%" align="left" valign="middle" nowrap="nowrap">
-			<table width="50%">
-			 <tr>
-		       <td align="center" valign="middle" class="champs"><input name="civilite" type="radio" id="civilite" value="Monsieur" checked="checked" /> Monsieur</td>
-		       <td align="center" valign="middle" class="champs"> <input name="civilite" type="radio" id="civilite" value="Madame" /> Madame</td>
-			 </tr>
-			 </table>
-			</td>
-		  </tr>
-		
-		  <tr>
-			<td align="right" valign="middle" class="champs">NOM<span style="color: #FF0000">*</span>:</td>
-			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="nom" type="text" size="50" />&nbsp;</td>
-		  </tr>
-		  <tr>
-			<td align="right" valign="middle" class="champs">Pr&eacute;nom<span style="color: #FF0000">*</span>:</td>
-			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="prenom" type="text" size="50" />&nbsp;</td>
-		  </tr>
-		  <tr>
-			<td align="right" valign="middle" class="champs">Email<span style="color: #FF0000">*</span>:</td>
-			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="email" type="text"size="50" />&nbsp;</td>
-		  </tr>
-		  <tr>
-			<td align="right" valign="middle" class="champs">T&eacute;l&eacute;phone<span style="color: #FF0000">*</span>:</td>
-			<td align="left" valign="middle" nowrap="nowrap" class="champs"><input name="tel" type="text" size="50"/>&nbsp;</td>
-		  </tr>
-		  <tr>
-			<td colspan="2" align="left" height="30" valign="middle"></td>
-		  </tr>
-		  <tr>
-			<td colspan="2" align="left" valign="middle" class="champs">Descriptif des travaux:</td>
-		  </tr>
-		  <tr>
-			<td colspan="2" align="left" valign="middle" class="champs"><textarea name="descriptif" cols="70" rows="10" ></textarea>
-			&nbsp;</td>
-		  </tr>
-  		  <tr>
-			<td colspan="2" align="middle" valign="middle" class="champs"><input name="Envoyer" type="submit" id="Envoyer" value="Envoyer" /></td>
-		  </tr>
-  		  <tr>
-			<td colspan="2" align="right" valign="middle" class="champs"><input name="ID" type="hidden" id="ID" /></td>
-		  </tr>
-		  <tr>
-			<td colspan="2" align="left" height="30" valign="middle" class="information"><p>Vous recevrez par email une confirmation de r&eacute;ception de votre demande. </p>
-			  Les informations demand&eacute;es dans ce formulaire servent &agrave; traiter votre demande et &agrave; vous recontacter. Elles ne sont et ne seront en aucun cas c&eacute;d&eacute;es &agrave; des tiers pour quelque raison que ce soit.</td>
-		  </tr>
-		  
-	  </table>
-  </form>
-  -->
         </div>
     </section>
     <section id="footer">
