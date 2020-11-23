@@ -58,23 +58,24 @@ $moyenne = round($somme/5,1);
 
 <head>
     <title> Peinture deco 83</title>
-    <meta charset="UTF-8" />
 
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale-1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Bienvenue chez JMP&Couleur-arc-en-ciel. Décoration, rénovation, peinture intérieure ou extérieure, nous ferons de notre mieux pour satisfaire toutes vos envies et faire de votre chez vous quelque chose qui vous tient à coeur.">
-    <meta name="revised" content="08/10/2020" `>
+    <meta name="revised" content="05/11/2020" `>
     <meta name="keywords" content="peinture, décoration, rénovation, peinture var, décoration var, peinture 83, peinturedeco83, savoir-faire, société de peinture, site internet peinture, intérieure, extérieure, 83, var, picard, Laurent, Jean Marie, jean, Marie">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo%20groupe.png" />
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style-rea.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42232039-4"></script>
@@ -86,7 +87,6 @@ $moyenne = round($somme/5,1);
         }
         gtag('js', new Date());
         gtag('config', 'UA-42232039-4');
-
     </script>
 
 </head>
@@ -117,7 +117,7 @@ $moyenne = round($somme/5,1);
                     </a>
                 </li>
                 <li>
-                    <a id="btn3" href="rea.html">
+                    <a id="btn3" href="rea-previous.html">
                         <div id="btn3-in"><img id="mouseleave" src="images/btn/rea.png" width="171px" height="64"> </div>
                         <div id="btn3-out"><img id="mouseenter" src="images/btn/rea-survol.png" width="171px" height="64"></div>
                     </a>

@@ -161,7 +161,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
                     </a>
                 </li>
                 <li>
-                    <a id="btn3" href="rea.html">
+                    <a id="btn3" href="rea-previous.html">
                         <div id="btn3-in"><img id="mouseleave" src="images/btn/rea.png" width="171px" height="64"> </div>
                         <div id="btn3-out"><img id="mouseenter" src="images/btn/rea-survol.png" width="171px" height="64"></div>
                     </a>

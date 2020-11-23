@@ -200,7 +200,13 @@ Main components
     text-align: right;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 50px;
+    padding-right: 30px;
+}
+
+#decoration{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 
@@ -239,6 +245,52 @@ Main components
 #mosaique table#mosa img:hover{
     border: 2px solid blue;
 }
+
+/* -----------Refonte de la mosaique de peinture intérieure---------------*/
+
+#mosaique-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+
+}
+
+.mosaique-item{
+    width: 350px;
+    margin: 5px;
+    border: 2px solid burlywood;
+}
+
+.mosaique-item a:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .mosaique-item{
+        width: 150px;
+        padding: 5px;
+    }
+
+    #texte-explication p{
+        text-align: justify;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+}
+
+.carousel-inner .item img{
+    display: block;
+    height: 100%;
+    margin:auto;
+}
+
+/* -----------FIN Refonte de la mosaique de peinture intérieure-------------*/
 
 #affichage{
     float: right;

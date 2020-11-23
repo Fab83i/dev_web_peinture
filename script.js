@@ -122,4 +122,13 @@ $(document).ready(function () {
     
     $('#arc-en-ciel').show(500);
     $('#jmp').show(500);
+
+
+
+    $('.mosaique-item a').on('click', function (){
+        $('.carousel-inner .item').removeClass('active');
+        var id = $(this).attr('id');
+        $('div#'+id).addClass('active');
+
+    });
 });
