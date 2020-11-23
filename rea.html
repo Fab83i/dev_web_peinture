@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> JMP / Couleur arc-en-ciel</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="peinture, décoration, rénovation, peinture var, décoration var, peinture 83, peinturedeco83, savoir-faire, société de peinture, site internet peinture, intérieure, extérieure, 83, var, picard, Laurent, Jean Marie, jean, Marie">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="images/logo%20groupe.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style-rea.css"> <!-- Resource style -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42232039-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-42232039-4');
+    </script>
+</head>
+
+<body>
+    <section id="entete">
+
+        <div class=" logo-bandeau">
+            <a href="index.php"><img src="images/logo%20groupe.png" width="500"></a>
+        </div>
+
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a id="btn1" href="savoir-etre.html">
+                        <div id="btn1-in"><img id="mouseleave" src="images/btn/savoir-faire.png" width="171px" height="64"> </div>
+                        <div id="btn1-out"><img id="mouseenter" src="images/btn/sf-survol.png" width="171px" height="64"></div>
+                    </a>
+                </li>
+                <li>
+                    <a id="btn2" href="index.php">
+                        <div id="btn2-in"><img id="mouseleave" src="images/btn/accueil-btn.png" width="171px" height="64"> </div>
+                        <div id="btn2-out"><img id="mouseenter" src="images/btn/accueil-survol.png" width="171px" height="64"></div>
+                    </a>
+                </li>
+                <li>
+                    <a id="btn3" href="rea-previous.html">
+                        <div id="btn3-in"><img id="mouseleave" src="images/btn/rea.png" width="171px" height="64"> </div>
+                        <div id="btn3-out"><img id="mouseenter" src="images/btn/rea-survol.png" width="171px" height="64"></div>
+                    </a>
+                </li>
+                <li>
+                    <a id="btn4" href="avis.php">
+                        <div id="btn4-in"><img id="mouseleave" src="images/btn/avis.png" width="171px" height="64"> </div>
+                        <div id="btn4-out"><img id="mouseenter" src="images/btn/avis-survol.png" width="171px" height="64"></div>
+                    </a>
+                </li>
+                <li>
+                    <a id="btn5" href="contact.html">
+                        <div id="btn5-in"><img id="mouseleave" src="images/btn/contact.png" width="171px" height="64"> </div>
+                        <div id="btn5-out"><img id="mouseenter" src="images/btn/contact-survol.png" width="171px" height="64"></div>
+                    </a>
+                </li>
+                <li>
+                    <a id="btn6" href="devis.php">
+                        <div id="btn6-in"><img id="mouseleave" src="images/btn/devis.png" width="171px" height="64"> </div>
+                        <div id="btn6-out"><img id="mouseenter" src="images/btn/devis-survol.png" width="171px" height="64"></div>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+
+
+
+
+    <section id="Main">
+
+        <!-- PEINTURE INT -->
+        <!--TITRE CATEGORIE -->
+        <div id="peinture">
+            <h1 style="font-family: 'Merienda One', sans-serif;">De la peinture intérieure...</h1>
+        </div>
+        <!-- FIN TITRE CATEGORIE -->
+
+        <!--SLIDER PEINTURE -->
+        <figure class="cd-image-container">
+            <img src="images/cuisine2_r.jpg" alt="Original Image">
+            <span class="cd-image-label" data-type="original">Après</span>
+            <div class="cd-resize-img">
+                <!-- the resizable image on top -->
+                <img src="images/cuisine1_r.jpg" alt="Modified Image">
+                <span class="cd-image-label" data-type="modified">Avant</span>
+            </div>
+            <span class="cd-handle"></span>
+        </figure> <!-- cd-image-container -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+        <script src="js/main.js"></script> <!-- Resource jQuery -->
+        <!--FIN SLIDER PEINTURE -->
+
+        <!--EXPLICATION CATEGORIE -->
+        <div id="texte-explication">
+            <p>En utilisant des produits de qualité, nous vous garantissons un résultat parfait. <br>JMP & Couleur arc-en-ciel partagent leur savoir-faire pour faire de votre intérieur un lieu chaleureux et conviviable.</p>
+        </div>
+        <!-- FIN EXPLICATION CATEGORIE -->
+
+
+        <!--MOSAIQUE -->
+        <div id="mosaique-container">
+            <div class="mosaique-item">
+                <a id="peinture-1" data-toggle="modal" data-target="#myModal"><img src="images/orange_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="peinture-2" data-toggle="modal" data-target="#myModal"><img src="images/violet_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="peinture-3" data-toggle="modal" data-target="#myModal"><img src="images/org-fenetre_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a  id="peinture-4" data-toggle="modal" data-target="#myModal"><img src="images/bande_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a  id="peinture-5" data-toggle="modal" data-target="#myModal"><img src="images/salon_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="peinture-6" data-toggle="modal" data-target="#myModal"><img src="images/20200620_185201288_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="peinture-7" data-toggle="modal" data-target="#myModal"><img src="images/20200620_185206191_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="peinture-8" data-toggle="modal" data-target="#myModal"><img src="images/unknow.jpg" alt="picture1"></a>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade kill" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Galerie</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div id="peinture-6" class="item">
+                                    <img  src="images/20200620_185201288_iOS.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="peinture-5" class="item active">
+                                    <img src="images/salon.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="peinture-7" class="item">
+                                    <img src="images/20200620_185206191_r.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="peinture-3" class="item">
+                                    <img src="images/org-fenetre.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="peinture-1" class="item">
+                                    <img src="images/orange.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="peinture-2" class="item" id="2">
+                                    <img src="images/violet.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="peinture-4" class="item">
+                                    <img src="images/bande.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        <!-- FIN MOSAIQUE -->
+
+        <!-- RENOVATION -->
+        <!--TITRE RENOVATION -->
+        <div id="renovation">
+            <h1 style="font-family: 'Merienda One', sans-serif;">... De la rénovation ...</h1>
+        </div>
+        <!--FIN TITRE RENOVATION -->
+
+
+        <!--SLIDER RENOVATION -->
+        <figure class="cd-image-container">
+            <img src="images/arche-modified_r.jpg" alt="Original Image">
+            <span class="cd-image-label" data-type="original">Après</span>
+            <div class="cd-resize-img">
+                <!-- the resizable image on top -->
+                <img src="images/arche-original_r.jpg" alt="Modified Image">
+                <span class="cd-image-label" data-type="modified">Avant</span>
+            </div>
+            <span class="cd-handle"></span>
+        </figure> <!-- cd-image-container -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+        <script src="js/main.js"></script> <!-- Resource jQuery -->
+        <!--FIN SLIDER RENOVATION -->
+
+        <!--EXPLICATION -->
+        <div id="texte-explication">
+            <p> La rénovation fait également partie de nos compétences. Des plafonds, aux cages d'escaliers, en passant par tout type d'architecture, nous serons en mesure de vous satisfaire et de réaliser au mieux vos envies.</p>
+        </div>
+        <!--FIN EXPLICATION -->
+
+        <!--MOSAIQUE -->
+        <div id="mosaique-container">
+            <div class="mosaique-item">
+                <a id="renovation-1" data-toggle="modal" data-target="#myModalRenov"><img src="images/plafond1_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="renovation-2" data-toggle="modal" data-target="#myModalRenov"><img src="images/plafond2_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="renovation-3" data-toggle="modal" data-target="#myModalRenov"><img src="images/esc1_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="renovation-4" data-toggle="modal" data-target="#myModalRenov"><img src="images/esc2_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="renovation-5" data-toggle="modal" data-target="#myModalRenov"><img src="images/esc3_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="renovation-6" data-toggle="modal" data-target="#myModalRenov"><img src="images/esc4_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="renovation-7" data-toggle="modal" data-target="#myModalRenov"><img src="images/esc5_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="renovation-8" data-toggle="modal" data-target="#myModalRenov"><img src="images/unknow.jpg" alt="picture1"></a>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade kill" id="myModalRenov" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Galerie</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-renovation" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-renovation" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-renovation" data-slide-to="1"></li>
+                                <li data-target="#carousel-renovation" data-slide-to="2"></li>
+                                <li data-target="#carousel-renovation" data-slide-to="3"></li>
+                                <li data-target="#carousel-renovation" data-slide-to="4"></li>
+                                <li data-target="#carousel-renovation" data-slide-to="5"></li>
+                                <li data-target="#carousel-renovation" data-slide-to="6"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div id="renovation-1" class="item" >
+                                    <img  src="images/plafond1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="renovation-2" class="item">
+                                    <img src="images/plafond2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="renovation-3" class="item">
+                                    <img src="images/esc1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="renovation-4" class="item">
+                                    <img src="images/esc2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="renovation-5" class="item">
+                                    <img src="images/esc3.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="renovation-6" class="item">
+                                    <img src="images/esc4.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="renovation-7" class="item">
+                                    <img src="images/esc5.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-renovation" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-renovation" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FIN MOSAIQUE -->
+
+
+
+        <!-- PEINTURE EXT -->
+        <!--TITRE FACADE -->
+        <div id="façade">
+            <h1 style="font-family: 'Merienda One', sans-serif;">... De la peinture extérieure</h1>
+        </div>
+        <!--FIN TITRE FACADE -->
+
+        <!--SLIDER FACADE -->
+        <figure class="cd-image-container">
+            <img src="images/facade-apres_r.jpg" alt="modified Image">
+            <span class="cd-image-label" data-type="modified">Après</span>
+            <div class="cd-resize-img">
+                <!-- the resizable image on top -->
+                <img src="images/facade-avant_r.jpg" alt="Original Image">
+                <span class="cd-image-label" data-type="original">Avant</span>
+            </div>
+            <span class="cd-handle"></span>
+        </figure> <!-- cd-image-container -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+        <script src="js/main.js"></script> <!-- Resource jQuery -->
+        <!--FIN LSIDER FACADE -->
+
+        <!--EXPLICATION -->
+        <div id="texte-explication">
+            <p> Votre extérieur semble prendre de l'âge ? <br> Nous sommes en mesure de lui redonner son éclat d'antant en faisant s'exprimer, à nouveau, sa couleur. Ou encore en lui redonnant vie avec de nouvelles teintes.</p>
+        </div>
+        <!--FIN EXPLICATION -->
+
+        <!--MOSAIQUE -->
+        <div id="mosaique-container">
+            <div class="mosaique-item">
+                <a id="facade-1" data-toggle="modal" data-target="#myModalFac"><img src="images/facade1_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="facade-2" data-toggle="modal" data-target="#myModalFac"><img src="images/facade2_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="facade-3" data-toggle="modal" data-target="#myModalFac"><img src="images/facade3_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="facade-4" data-toggle="modal" data-target="#myModalFac"><img src="images/facade-avant_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="facade-5" data-toggle="modal" data-target="#myModalFac"><img src="images/facade-apres_r.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="facade-6" data-toggle="modal" data-target="#myModalFac"><img src="images/unknow.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="facade-7" data-toggle="modal" data-target="#myModalFac"><img src="images/unknow.jpg" alt="picture1"></a>
+            </div>
+            <div class="mosaique-item">
+                <a id="facade-8" data-toggle="modal" data-target="#myModalFac"><img src="images/unknow.jpg" alt="picture1"></a>
+            </div>
+
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade kill" id="myModalFac" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Galerie</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-facade" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-facade" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-facade" data-slide-to="1"></li>
+                                <li data-target="#carousel-facade" data-slide-to="2"></li>
+                                <li data-target="#carousel-facade" data-slide-to="3"></li>
+                                <li data-target="#carousel-facade" data-slide-to="4"></li>
+                                <li data-target="#carousel-facade" data-slide-to="5"></li>
+                                <li data-target="#carousel-facade" data-slide-to="6"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div id="facade-1" class="item" >
+                                    <img  src="images/facade1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="facade-2" class="item">
+                                    <img src="images/facade2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="facade-3" class="item">
+                                    <img src="images/facade3.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="facade-4" class="item">
+                                    <img src="images/facade-avant.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="facade-5" class="item">
+                                    <img src="images/facade-apres.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="facade-6" class="item">
+                                    <img src="images/unknow.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="facade-7" class="item">
+                                    <img src="images/unknow.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-facade" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-facade" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN MOSAIQUE -->
+
+        <!-- DECORATION-->
+        <!--TITRE DECORATION -->
+        <div id="decoration">
+            <h1 style="font-family: 'Merienda One', sans-serif;">De la décoration...</h1>
+        </div>
+        <!--FIN TITRE FACADE -->
+
+        <!--SLIDER FACADE -->
+        <figure class="cd-image-container">
+            <img src="images/porte-modifie.jpg" alt="modified Image">
+            <span class="cd-image-label" data-type="modified">Après</span>
+            <div class="cd-resize-img">
+                <!-- the resizable image on top -->
+                <img src="images/porte-origin.jpg" alt="Original Image">
+                <span class="cd-image-label" data-type="original">Avant</span>
+            </div>
+            <span class="cd-handle"></span>
+        </figure> <!-- cd-image-container -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+        <script src="js/main.js"></script> <!-- Resource jQuery -->
+        <!--FIN LSIDER FACADE -->
+
+        <!--EXPLICATION -->
+        <div id="texte-explication">
+            <p> La décoration fait également partie de notre savoir-faire. <br> Porte, placard ou même peinture stylisée, tout pour vous faire bénéficier d'une décoration de rêve.</p>
+        </div>
+        <!--FIN EXPLICATION -->
+
+        <!--MOSAIQUE -->
+        <div id="mosaique-container">
+            <div class="mosaique-item">
+                <a id="decoration-1" data-toggle="modal" data-target="#myModalDec"><img src="images/tadlac_r.jpg" alt="picture1">
+            </div>
+            <div class="mosaique-item">
+                <a id="decoration-2" data-toggle="modal" data-target="#myModalDec"><img src="images/tadlac-progress_r.jpg" alt="picture1">
+            </div>
+            <div class="mosaique-item">
+                <a id="decoration-3" data-toggle="modal" data-target="#myModalDec"><img src="images/101111_r.jpg" alt="picture1">
+            </div>
+            <div class="mosaique-item">
+                <a id="decoration-4" data-toggle="modal" data-target="#myModalDec"><img src="images/101543_r.jpg" alt="picture1">
+            </div>
+            <div class="mosaique-item">
+                <a id="decoration-5" data-toggle="modal" data-target="#myModalDec"><img src="images/104031_r.jpg" alt="picture1">
+            </div>
+            <div class="mosaique-item">
+                <a id="decoration-6" data-toggle="modal" data-target="#myModalDec"><img src="images/145221_r.jpg" alt="picture1">
+            </div>
+            <div class="mosaique-item">
+                <a id="decoration-7" data-toggle="modal" data-target="#myModalDec"><img src="images/164543_r.jpg" alt="picture1">
+            </div>
+            <div class="mosaique-item">
+                <a id="decoration-8" data-toggle="modal" data-target="#myModalDec"><img src="images/180359_r.jpg" alt="picture1">
+            </div>
+
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade kill" id="myModalDec" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Galerie</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-dec" class="carousel slide" data-ride="carousel"data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-dec" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-dec" data-slide-to="1"></li>
+                                <li data-target="#carousel-dec" data-slide-to="2"></li>
+                                <li data-target="#carousel-dec" data-slide-to="3"></li>
+                                <li data-target="#carousel-dec" data-slide-to="4"></li>
+                                <li data-target="#carousel-dec" data-slide-to="5"></li>
+                                <li data-target="#carousel-dec" data-slide-to="6"></li>
+                                <li data-target="#carousel-dec" data-slide-to="7"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div id="decoration-1" class="item" >
+                                    <img  src="images/tadlac.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="decoration-2" class="item">
+                                    <img src="images/tadlac-progress.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="decoration-3" class="item">
+                                    <img src="images/101111.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="decoration-4" class="item">
+                                    <img src="images/101543.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="decoration-5" class="item">
+                                    <img src="images/104031.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="decoration-6" class="item">
+                                    <img src="images/145221.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="decoration-7" class="item">
+                                    <img src="images/164543.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div id="decoration-8" class="item">
+                                    <img src="images/180359.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-dec" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-dec" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN MOSAIQUE -->
+
+    </section>
+
+
+
+    <!--PIED DE PAGE -->
+    <section id="footer">
+        <div id="pied">
+        </div>
+    </section>
+
+
+
+    <p style="text-align: center;">2020 JMP/CouleurArcEnCiel - Tous droits réservés</p>
+
+</body>
+
+</html>
