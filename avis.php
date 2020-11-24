@@ -158,7 +158,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
                     </a>
                 </li>
                 <li>
-                    <a id="btn3" href="rea-previous.html">
+                    <a id="btn3" href="rea.html">
                         <div id="btn3-in"><img id="mouseleave" src="images/btn/rea.png" width="171px" height="64"> </div>
                         <div id="btn3-out"><img id="mouseenter" src="images/btn/rea-survol.png" width="171px" height="64"></div>
                     </a>
@@ -195,7 +195,7 @@ if ((isset($_POST["Envoyer"])) && ($_POST["Envoyer"] == "Envoyer"))
                     <p id="avisId"><?php echo '"'.utf8_encode($row_avis['commentaire']).'"';?></p>
                     <p id="levelId">
                         Vitesse d'éxécution &nbsp;&nbsp;&nbsp;
-                        <img src="star-on.svg" width="20" height="20" alt="" />
+                        <img style="display: inline-block" src="star-on.svg" width="20" height="20" alt="" />
                         <?php if ($row_avis['vitesse']>=2) { ?><img src="star-on.svg" width="20" height="20" alt="" /> <?php }?>
                         <?php if ($row_avis['vitesse']>=3) { ?><img src="star-on.svg" width="20" height="20" alt="" /> <?php }?>
                         <?php if ($row_avis['vitesse']>=4) { ?><img src="star-on.svg" width="20" height="20" alt="" /> <?php }?>

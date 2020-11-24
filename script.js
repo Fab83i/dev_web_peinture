@@ -126,7 +126,7 @@ $(document).ready(function () {
 
 
     $('.mosaique-item a').on('click', function (){
-        $('.carousel-inner .item').removeClass('active');
+        $('.rea .item').removeClass('active');
         var id = $(this).attr('id');
         $('div#'+id).addClass('active');
 

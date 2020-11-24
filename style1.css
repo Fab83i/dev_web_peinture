@@ -57,3 +57,7 @@ a{
 {
   opacity : 1;
 }
+
+#levelId img{
+  display: inline-block;
+}
