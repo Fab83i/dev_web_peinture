@@ -19,17 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a6b4d1-32e3-4a20-8eda-2283bff9fc97" name="Default Changelist" comment="">
+    <list default="true" id="23a6b4d1-32e3-4a20-8eda-2283bff9fc97" name="Default Changelist" comment="modification de la page réalisation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avis.php" beforeDir="false" afterPath="$PROJECT_DIR$/avis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-rea.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-rea.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/default_index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devis.php" beforeDir="false" afterPath="$PROJECT_DIR$/devis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rea.html" beforeDir="false" afterPath="$PROJECT_DIR$/rea-previous.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/savoir-etre.html" beforeDir="false" afterPath="$PROJECT_DIR$/savoir-etre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075435398.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075435398_r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075440899.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075440899_r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075445235.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075445235_r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075450109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/075450109_r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rea.html" beforeDir="false" afterPath="$PROJECT_DIR$/rea.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +93,10 @@
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="458" y="190" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.831/203.-1027.1680.1027@0.23.1440.831" timestamp="1602346583886" />
+    <state x="518" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606154720623">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="518" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.827@0.23.1440.827" timestamp="1606154720623" />
     <state x="418" y="162" width="604" height="548" key="find.popup" timestamp="1606052757973">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
