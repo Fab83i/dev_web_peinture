@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a6b4d1-32e3-4a20-8eda-2283bff9fc97" name="Default Changelist" comment="modification de la page réalisation">
+    <list default="true" id="23a6b4d1-32e3-4a20-8eda-2283bff9fc97" name="Default Changelist" comment="retrait des indicateurs de slide&#10;Correction orthographe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rea.html" beforeDir="false" afterPath="$PROJECT_DIR$/rea.html" afterDir="false" />
     </list>
@@ -63,6 +63,14 @@
       <workItem from="1605952342407" duration="16092000" />
       <workItem from="1606138491622" duration="4686000" />
     </task>
+    <task id="LOCAL-00001" summary="retrait des indicateurs de slide&#10;Correction orthographe">
+      <created>1606239142377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606239142377</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,6 +87,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="retrait des indicateurs de slide&#10;Correction orthographe" />
+    <option name="LAST_COMMIT_MESSAGE" value="retrait des indicateurs de slide&#10;Correction orthographe" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="190" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602346583886">
