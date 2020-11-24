@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="23a6b4d1-32e3-4a20-8eda-2283bff9fc97" name="Default Changelist" comment="retrait des indicateurs de slide&#10;Correction orthographe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rea.html" beforeDir="false" afterPath="$PROJECT_DIR$/rea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606239142377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="retrait des indicateurs de slide&#10;Correction orthographe">
+      <created>1606239282458</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606239282458</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +104,10 @@
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="458" y="190" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.831/203.-1027.1680.1027@0.23.1440.831" timestamp="1602346583886" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1606239289786">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.23.1440.830@0.23.1440.830" timestamp="1606239289786" />
     <state x="518" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606154720623">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
